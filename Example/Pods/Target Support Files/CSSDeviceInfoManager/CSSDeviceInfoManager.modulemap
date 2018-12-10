@@ -1,0 +1,6 @@
+framework module CSSDeviceInfoManager {
+  umbrella header "CSSDeviceInfoManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

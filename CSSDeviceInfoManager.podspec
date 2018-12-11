@@ -30,8 +30,17 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'CSSDeviceInfoManager/Classes/**/*'
+  s.source_files = 'CSSDeviceInfoManager/Classes/*.{h,m}'
   
+  s.dependency 'CSSKit'
+  s.dependency 'CSSDeviceInfoTool'
+  s.dependency 'CSSNetworkClient'
+  
+  s.ios.vendored_frameworks = 'CSSDeviceInfoManager/Classes/*.framework'
+  
+  s.subspec 'Sender' do |ss|
+      ss.source_files = 'CSSDeviceInfoManager/Classes/Sender/**/*'
+  end
   # s.resource_bundles = {
   #   'CSSDeviceInfoManager' => ['CSSDeviceInfoManager/Assets/*.png']
   # }

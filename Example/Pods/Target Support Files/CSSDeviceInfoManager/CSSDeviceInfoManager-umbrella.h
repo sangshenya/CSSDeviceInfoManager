@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "CSSDeviceInfoManager.h"
+#import "CSSTrackerSender.h"
 
 FOUNDATION_EXPORT double CSSDeviceInfoManagerVersionNumber;
 FOUNDATION_EXPORT const unsigned char CSSDeviceInfoManagerVersionString[];

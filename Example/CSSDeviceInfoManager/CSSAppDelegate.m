@@ -7,12 +7,16 @@
 //
 
 #import "CSSAppDelegate.h"
+#import "CSSDeviceInfoManager.h"
 
 @implementation CSSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    double machine = [[CSSDeviceInfoManager sharedInstance] machineId];
+    
     return YES;
 }
 

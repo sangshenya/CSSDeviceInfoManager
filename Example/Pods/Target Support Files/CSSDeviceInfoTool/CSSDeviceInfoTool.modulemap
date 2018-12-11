@@ -1,0 +1,6 @@
+framework module CSSDeviceInfoTool {
+  umbrella header "CSSDeviceInfoTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

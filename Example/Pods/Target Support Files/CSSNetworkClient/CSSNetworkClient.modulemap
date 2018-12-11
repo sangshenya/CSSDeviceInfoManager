@@ -1,0 +1,6 @@
+framework module CSSNetworkClient {
+  umbrella header "CSSNetworkClient-umbrella.h"
+
+  export *
+  module * { export * }
+}

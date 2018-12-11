@@ -7,85 +7,262 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		101C14EC919CF10619C983EA42CE8956 /* Pods-CSSDeviceInfoManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE9B0D0EF9D8F36BCBFBB33B2C6055 /* Pods-CSSDeviceInfoManager_Example-dummy.m */; };
+		01D84ECE8D668255B2331A780F90C5E6 /* CSSDeviceInfoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FB4B41A92BFE6B6EEAF472F112C31015 /* CSSDeviceInfoManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0224261C2247A3D48984DEB1235A0FA2 /* NSDate+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B57A58D53AC86069EA910B6E9EC0EE2 /* NSDate+Addition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		038E7720DDD2B70A1502650B2AA052F5 /* CSSDeviceInfoTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A073A605129A7DCDF8B398EE2DF8DE27 /* CSSDeviceInfoTool-dummy.m */; };
+		0BD40DA3E909271BD4F05B89D84FB8D3 /* CSSDeviceInfoTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E569C27563B0FAF4E7A8A7F3C917E5A2 /* CSSDeviceInfoTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C78FCFAA5B7081E971CF1A7638E3432 /* CSSEncryptRSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A7CE045CB92269287BFB2BB316AB10 /* CSSEncryptRSA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		121DB4E761D746591EFB47EB21539B17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A731191278331269A16AEBACE6A4318E /* Foundation.framework */; };
+		128BA2E5384043C7CBF16B66DCE10A16 /* CSSEncryptRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BF80A777C46D8382921D1F8D66E6B /* CSSEncryptRSA.m */; };
+		14A8E9E3B4D2920D95D84F04E989759D /* NSKeyedUnarchiver+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 649288B4B439E0B70B72687F43BB534E /* NSKeyedUnarchiver+Addition.m */; };
 		1963F7F8753882C1B40D6BBC6EB9A26C /* Pods-CSSDeviceInfoManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6C36D5BF45EA781B2C29E92A3338B5 /* Pods-CSSDeviceInfoManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6EEED41E2CC0F3F27BE39A59D11C42F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		2A7EE17BD99E2DC8D94DEF4742F25853 /* CSSCGUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 0218E84C5272D1D2677255CA5EBEF1DB /* CSSCGUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD8E802510D3A6FF46CE991611B7E95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A731191278331269A16AEBACE6A4318E /* Foundation.framework */; };
+		2DDA03AF83CEB63AAB51BD492BB9762A /* NSArray+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EB8D21DCD0605870812F61A385C17E6 /* NSArray+Addition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3030334DA106AA30126F7E312C8FD156 /* NSDictionary+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = FB071E9193D965896B60BCEB724E407F /* NSDictionary+Addition.m */; };
+		33ED910F3FFA9FB025806A33A8233F88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A731191278331269A16AEBACE6A4318E /* Foundation.framework */; };
+		3404C1D03850F9C20D87DD44AE2D0C5B /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEEE8BB85975BA575C150B4F74FAC1F /* NSString+Addition.m */; };
+		36229D1AEB3F61219450E4A939F46D75 /* UIView+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B6AC1D8F416C2866B76CDE3933AB80 /* UIView+Addition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		368BA1DFAD3D83ED976689158A3ABA31 /* CSSNetworkClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F90EA21DBDF32ADEE3275A3DF86B8881 /* CSSNetworkClient-dummy.m */; };
+		37A81B66D11643D75C409A8294099B94 /* CSSDeviceInfoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D4798B07B579433AA20E336FB5768005 /* CSSDeviceInfoTool.m */; };
+		3BAC68467873EE768F4AB7870EEBFFEE /* Pods-CSSDeviceInfoManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE9B0D0EF9D8F36BCBFBB33B2C6055 /* Pods-CSSDeviceInfoManager_Example-dummy.m */; };
+		43AF8452D38D1BA9B4AEABD826F6A3BE /* CSSNetworkClient+Singletop.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E40D39147162FD37331F81F979AD2 /* CSSNetworkClient+Singletop.m */; };
+		4BBCEF6FC02935FA747BCB16320DBCAD /* CSSEncryptAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 817E71CFCCE371B0CA97A4E141BD03AD /* CSSEncryptAES.m */; };
+		4E33503992A52BCD31AFBE3078F35391 /* NSData+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A9A5B3C6C6E2FF9FEDB87CE7F91C84 /* NSData+Addition.m */; };
+		4FBA9A8EC7C77887348D422F28EB8861 /* CSSHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C2778E1E88530A618246A37A64D4A26C /* CSSHTTPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		518D17902D5DC5196C4479F973CFA79E /* Pods-CSSDeviceInfoManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC796D721573EEF5EE979091F96E4A7 /* Pods-CSSDeviceInfoManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59E98ECA54392B43B0AAF926F5B867BE /* NSString+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F004296557B25B4E0AC9E38C0475A3B /* NSString+Addition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F58C307ADBD67C95D84EE1586F705F8 /* NSKeyedUnarchiver+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F2865F4F8D35909D3BEA50D02CF64E /* NSKeyedUnarchiver+Addition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D73CE6B1B2B0C6BB014829C91B67399 /* CSSEncryptAES.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EBC8FDECC7734D502367D7F6ED55095 /* CSSEncryptAES.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EEED41E2CC0F3F27BE39A59D11C42F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A731191278331269A16AEBACE6A4318E /* Foundation.framework */; };
+		73F0D901411E3C55F9AD168D47CD85FE /* CSSMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E26AFF3EE24C9C2AA9D1BE3BB8DB6A8D /* CSSMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73FBCB340E5914F78B83B36514A9BB6D /* NSData+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438203B36888ED2148F1762E606E099 /* NSData+Addition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		779EC513A9EA99B6B1AAB65AEE62CCF0 /* NSObject+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 165003F0D6AB6398DB78FC55A198603A /* NSObject+Addition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77FB7F8FCE6B56E083BD65C4228E9AA2 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8F7B9A1846F3DDABE24022AFD1271D /* UIView+Addition.m */; };
+		7B6C2D325D73464102DFF669A34B487B /* CSSNetworkClient+Singletop.h in Headers */ = {isa = PBXBuildFile; fileRef = 28E98418CCCC32D4B7136EF311931660 /* CSSNetworkClient+Singletop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C4F4F4DDFA1F7682DE0A3C959476478 /* CSSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578BE0D5F49C3FD9F6941885C3EE111F /* CSSKit.framework */; };
+		8164745FF6AD6746C3F17EF4949296E5 /* CSSKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAD3C4ABF6977171AC0C88772D026E0 /* CSSKit-dummy.m */; };
+		82993E6B25C09C2B208CF877DE2DA929 /* CSSNetworkClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2B91E812321BDFA4740F1BCEA8539E9 /* CSSNetworkClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84A9D24C65245102D9CC4E8E0BA5AA3E /* Pods-CSSDeviceInfoManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E4F7EAA580D43EB12B25171FA4D16D /* Pods-CSSDeviceInfoManager_Tests-dummy.m */; };
-		86D14A9CB5555F5BE348E84B306C7EFC /* CSSDeviceInfoManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE90C4A767BBFA4D9C03160446D786E /* CSSDeviceInfoManager-dummy.m */; };
-		9C019E8D333ED197B3D021BBFE0A0E0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		A22B024C22A4360C90A9A3906CAE3880 /* CSSDeviceInfoManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FD5F104276A1B2B9E0FAB406D98010 /* CSSDeviceInfoManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B24CAF10DA4ADD553810927C16E18AC3 /* Pods-CSSDeviceInfoManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC796D721573EEF5EE979091F96E4A7 /* Pods-CSSDeviceInfoManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E10E5B01287303ECB64427755CD6BB24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		854C50E91AAA73BC8C4A8B330B37A5CE /* CSSDeviceInfoTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678FAC051E4A156254E727DB8A62FEAB /* CSSDeviceInfoTool.framework */; };
+		8CC8A4BB4E61E47BEC5A38166132A035 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A731191278331269A16AEBACE6A4318E /* Foundation.framework */; };
+		90B9B2D74445CF1E0461CFA7254E1B6D /* CSSDeviceInfoManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 927C0EC3A950C7334B43F634A587FE79 /* CSSDeviceInfoManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93A7FF62D3C05BAB04F72B8BDF3D0B8B /* NSDate+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = D91D2DA3E8B7FBF6CFD53E3047519C4E /* NSDate+Addition.m */; };
+		94EDEB0F4DA5CFE5CFB43D6FFD30BDD0 /* CSSNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC0FCAAF22E06F676028CBFDD6D0620 /* CSSNetworkClient.m */; };
+		9C08FBBA1C981E827DB156DC3F9F4A16 /* CSSDeviceInfoTool.h in Headers */ = {isa = PBXBuildFile; fileRef = A58B8ED92C9224149B7DBD049EF1F465 /* CSSDeviceInfoTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EF8A92429676596D165E3831061D149 /* CSSDeviceInfoManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66779C1D3ABF0B087938866B22347AC0 /* CSSDeviceInfoManager-dummy.m */; };
+		9F72E6C8D0A223D9F704DB6FCCCE91F2 /* NSDictionary+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 15414E920D584EFF24956848B5EC1BB5 /* NSDictionary+Addition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A410C695A93237E27A4BD5471F490A82 /* CSSTrackerSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 61640E6D225BF93A39EDE7E8088C682E /* CSSTrackerSender.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA52C0D4C16B7F1A7EB8E84C7C026902 /* CSSNetworkClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1820AA47D8DD420DF49D9F0BD547AD0B /* CSSNetworkClient.framework */; };
+		BD9612A63B60B28E85D2E7A09B13A13B /* NSArray+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCDF92AAB74CF2A45918BA3CD8F8CFC /* NSArray+Addition.m */; };
+		C7555D660029EA317B82104AD4EA72AA /* CSSDeviceInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B80B014B73BD905D2D1B71E3B0D34A6D /* CSSDeviceInfoManager.m */; };
+		C892310541C9CA509A0C4E8534482D14 /* NSObject+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = B802D1794E580A1A5EC6CB4B1B29D2BE /* NSObject+Addition.m */; };
+		CB9AF07A07E63A983AD5C5BE67D3F90E /* CSSNetworkClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 436EDE02C082577C93E0C4ACEBD3EA82 /* CSSNetworkClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC559894F48EBAAE46F77A28D2E9E89E /* CSSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578BE0D5F49C3FD9F6941885C3EE111F /* CSSKit.framework */; };
+		D5A4960D9CF458F86D7E7CADA971E25B /* CSSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578BE0D5F49C3FD9F6941885C3EE111F /* CSSKit.framework */; };
+		D804A4BB7FFD709460B6A6A116E30C1C /* CSSKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A26AD3D322A5D942AD625C893609EDB /* CSSKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D848C34082978523B0780B1CCFFC1576 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A731191278331269A16AEBACE6A4318E /* Foundation.framework */; };
+		E62D938DD4EDB0FCF30AD5E48B816C00 /* CSSHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E6A3FE7C8527328ED63CC276E67B76 /* CSSHTTPOperation.m */; };
+		F191AC52961A906BD30C40448BC9C77B /* CSSTrackerSender.m in Sources */ = {isa = PBXBuildFile; fileRef = E332DAEB22F6BB2F14F45B7417538CD9 /* CSSTrackerSender.m */; };
+		F2EC39BD0350136F034C2BD26DF95BA5 /* CSSCGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBCE536EAA65C7C992A68AA29EE695B /* CSSCGUtilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9AEC890F4EDBD1E172EEA1E0860CF3B9 /* PBXContainerItemProxy */ = {
+		0B663F899E4696C858003D1B1DE0832A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 64D94C339E41B2F6AF32EB0979483E47;
+			remoteGlobalIDString = 298D0A257F6229FAB8D653539F16424A;
+			remoteInfo = CSSKit;
+		};
+		12C20EB23E295D70D47FFE0D2472BDEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 298D0A257F6229FAB8D653539F16424A;
+			remoteInfo = CSSKit;
+		};
+		1B5317BC308412311FB7958467C58109 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C84DDD559B213798F8AEDA62042BA6C;
+			remoteInfo = CSSNetworkClient;
+		};
+		379866F152C9B5B16C72867700AE4036 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32927B4A22FA0128A83F78842FA2D328;
 			remoteInfo = CSSDeviceInfoManager;
+		};
+		3B5545F4E7847CB09871934E387F2993 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3149E072F1879C8CB7AFFC597FECDB60;
+			remoteInfo = CSSDeviceInfoTool;
+		};
+		3BA3264B2CA9836E6EE7ECBA3126356C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3149E072F1879C8CB7AFFC597FECDB60;
+			remoteInfo = CSSDeviceInfoTool;
+		};
+		62C87B13D35A14FB28EB3884F626400A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 298D0A257F6229FAB8D653539F16424A;
+			remoteInfo = CSSKit;
 		};
 		BB5ED1856518B7859DA0A2A84052F9CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C56E2019D9B52A18DBD994C31781CC52;
+			remoteGlobalIDString = 047DD3A6D8144A1F68F2395C186983BC;
 			remoteInfo = "Pods-CSSDeviceInfoManager_Example";
+		};
+		C8FECE3E767CB74E121772B13A1E897B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 298D0A257F6229FAB8D653539F16424A;
+			remoteInfo = CSSKit;
+		};
+		DD4542758E4F644F9E2DF3BB66864D01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C84DDD559B213798F8AEDA62042BA6C;
+			remoteInfo = CSSNetworkClient;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		079892D21CB22ABFD6677242C46B2E89 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		0FCC962279D7BB67E873857B7D70AF08 /* CSSDeviceInfoManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = CSSDeviceInfoManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0218E84C5272D1D2677255CA5EBEF1DB /* CSSCGUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSCGUtilities.h; path = CSSKit/Classes/Quartz/CSSCGUtilities.h; sourceTree = "<group>"; };
+		0438203B36888ED2148F1762E606E099 /* NSData+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+Addition.h"; path = "CSSKit/Classes/Foundation/NSData+Addition.h"; sourceTree = "<group>"; };
+		06719A80CB94DEE0C8DC2C14DA977C8C /* MCLocationManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MCLocationManager.framework; path = CSSDeviceInfoManager/Classes/MCLocationManager.framework; sourceTree = "<group>"; };
+		0F3A738A4556C316B7A846AE03711C6B /* CSSDeviceInfoManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CSSDeviceInfoManager.framework; path = CSSDeviceInfoManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12CE77927EB10D168E70DA8880371801 /* CSSNetworkClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CSSNetworkClient.framework; path = CSSNetworkClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15414E920D584EFF24956848B5EC1BB5 /* NSDictionary+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Addition.h"; path = "CSSKit/Classes/Foundation/NSDictionary+Addition.h"; sourceTree = "<group>"; };
+		15B6AC1D8F416C2866B76CDE3933AB80 /* UIView+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Addition.h"; path = "CSSKit/Classes/UI/UIView+Addition.h"; sourceTree = "<group>"; };
+		165003F0D6AB6398DB78FC55A198603A /* NSObject+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Addition.h"; path = "CSSKit/Classes/Foundation/NSObject+Addition.h"; sourceTree = "<group>"; };
+		1820AA47D8DD420DF49D9F0BD547AD0B /* CSSNetworkClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSNetworkClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9D26DB277F839EA12D0387E6ED3E85 /* Pods-CSSDeviceInfoManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CSSDeviceInfoManager_Tests.modulemap"; sourceTree = "<group>"; };
-		230FA7905485CBA6AC492F633D77D161 /* CSSDeviceInfoManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSSDeviceInfoManager.xcconfig; sourceTree = "<group>"; };
+		28E98418CCCC32D4B7136EF311931660 /* CSSNetworkClient+Singletop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CSSNetworkClient+Singletop.h"; path = "CSSNetworkClient/Classes/CSSNetworkClient+Singletop.h"; sourceTree = "<group>"; };
+		2C4F3C24D7501E37740A361D9ED214A7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CBE20CCD755B405596663A84B652D49 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F07B661F023B9E5B971FB3CBA76246D /* CSSDeviceInfoTool.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSSDeviceInfoTool.xcconfig; sourceTree = "<group>"; };
+		33A7CE045CB92269287BFB2BB316AB10 /* CSSEncryptRSA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSEncryptRSA.h; path = CSSDeviceInfoTool/Classes/Encrypt/CSSEncryptRSA.h; sourceTree = "<group>"; };
 		392025B64705FCFB204279CCFC77D51A /* Pods-CSSDeviceInfoManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CSSDeviceInfoManager_Example-frameworks.sh"; sourceTree = "<group>"; };
+		3DAA35561DF3E938955EBDF06A82D51D /* CSSKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSSKit.xcconfig; sourceTree = "<group>"; };
+		41A6B3A139294A4862ECF94DB60A0C21 /* CSSNetworkClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSSNetworkClient.xcconfig; sourceTree = "<group>"; };
 		4306E82D7B15FFAFAF8F554CB33A017A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		436EDE02C082577C93E0C4ACEBD3EA82 /* CSSNetworkClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSNetworkClient.h; path = CSSNetworkClient/Classes/CSSNetworkClient.h; sourceTree = "<group>"; };
+		455E086C90EDCC86F0C1F84B474E508D /* CSSKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSSKit-prefix.pch"; sourceTree = "<group>"; };
+		46A9A5B3C6C6E2FF9FEDB87CE7F91C84 /* NSData+Addition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+Addition.m"; path = "CSSKit/Classes/Foundation/NSData+Addition.m"; sourceTree = "<group>"; };
 		4C91E23FFEF8B57446D5C9FEECB01320 /* Pods-CSSDeviceInfoManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSSDeviceInfoManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4DFAF207A03DBB7741CE23C29907CCCA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51E6A3FE7C8527328ED63CC276E67B76 /* CSSHTTPOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSHTTPOperation.m; path = CSSNetworkClient/Classes/CSSHTTPOperation.m; sourceTree = "<group>"; };
 		53B7587623C1A35E592EE8A9877E7D09 /* Pods-CSSDeviceInfoManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CSSDeviceInfoManager_Tests-resources.sh"; sourceTree = "<group>"; };
 		55E4F7EAA580D43EB12B25171FA4D16D /* Pods-CSSDeviceInfoManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CSSDeviceInfoManager_Tests-dummy.m"; sourceTree = "<group>"; };
-		57172B99B2C68A7664E2CE9AFB30C6E6 /* CSSDeviceInfoManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSDeviceInfoManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		578BE0D5F49C3FD9F6941885C3EE111F /* CSSKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57F634E86185CE549DD16BC106EA9670 /* CSSDeviceInfoTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CSSDeviceInfoTool.framework; path = CSSDeviceInfoTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A26AD3D322A5D942AD625C893609EDB /* CSSKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSSKit-umbrella.h"; sourceTree = "<group>"; };
+		5B57A58D53AC86069EA910B6E9EC0EE2 /* NSDate+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Addition.h"; path = "CSSKit/Classes/Foundation/NSDate+Addition.h"; sourceTree = "<group>"; };
+		5EB8D21DCD0605870812F61A385C17E6 /* NSArray+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Addition.h"; path = "CSSKit/Classes/Foundation/NSArray+Addition.h"; sourceTree = "<group>"; };
+		5F8F7B9A1846F3DDABE24022AFD1271D /* UIView+Addition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Addition.m"; path = "CSSKit/Classes/UI/UIView+Addition.m"; sourceTree = "<group>"; };
+		61640E6D225BF93A39EDE7E8088C682E /* CSSTrackerSender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSTrackerSender.h; path = CSSDeviceInfoManager/Classes/Sender/CSSTrackerSender.h; sourceTree = "<group>"; };
+		635DD58A31680CE41E0C08D729E419E4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		649288B4B439E0B70B72687F43BB534E /* NSKeyedUnarchiver+Addition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSKeyedUnarchiver+Addition.m"; path = "CSSKit/Classes/Foundation/NSKeyedUnarchiver+Addition.m"; sourceTree = "<group>"; };
+		65F2865F4F8D35909D3BEA50D02CF64E /* NSKeyedUnarchiver+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSKeyedUnarchiver+Addition.h"; path = "CSSKit/Classes/Foundation/NSKeyedUnarchiver+Addition.h"; sourceTree = "<group>"; };
+		66779C1D3ABF0B087938866B22347AC0 /* CSSDeviceInfoManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CSSDeviceInfoManager-dummy.m"; sourceTree = "<group>"; };
+		66C3FBD946A178A2C2F7DE763C6E3415 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		670834FC2F17D6B3939D40479027E856 /* Pods-CSSDeviceInfoManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CSSDeviceInfoManager_Example.modulemap"; sourceTree = "<group>"; };
+		678FAC051E4A156254E727DB8A62FEAB /* CSSDeviceInfoTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSDeviceInfoTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B99BE246CE849F246C4E76E970FD41 /* Pods-CSSDeviceInfoManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CSSDeviceInfoManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		69127DF7AD482D5A8EB92693AE840CA9 /* CSSNetworkClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSSNetworkClient-prefix.pch"; sourceTree = "<group>"; };
+		6C94CB598744235D69A43449825407EE /* CSSDeviceInfoManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = CSSDeviceInfoManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6CAF782C10F78B6165EF5BF9218BCC69 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6FCDF92AAB74CF2A45918BA3CD8F8CFC /* NSArray+Addition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Addition.m"; path = "CSSKit/Classes/Foundation/NSArray+Addition.m"; sourceTree = "<group>"; };
+		718CE6083C60C171A5711F0E85365FED /* CSSKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CSSKit.modulemap; sourceTree = "<group>"; };
+		733462619213CBFE96F8B57C18D346E8 /* CSSKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CSSKit.framework; path = CSSKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7477126B73BCF6749D9EC2B749CEB330 /* CSSNetworkClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CSSNetworkClient.modulemap; sourceTree = "<group>"; };
 		763A70BB1E1697C6495474021D6735F0 /* Pods-CSSDeviceInfoManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CSSDeviceInfoManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7CFE9B0D0EF9D8F36BCBFBB33B2C6055 /* Pods-CSSDeviceInfoManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CSSDeviceInfoManager_Example-dummy.m"; sourceTree = "<group>"; };
-		82484B27C2795F8D0A79D19CC4192C7A /* CSSDeviceInfoManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CSSDeviceInfoManager.modulemap; sourceTree = "<group>"; };
-		92C1D88E6BE018DCDE7D2950047E6A57 /* Pods_CSSDeviceInfoManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSSDeviceInfoManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9AE90C4A767BBFA4D9C03160446D786E /* CSSDeviceInfoManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CSSDeviceInfoManager-dummy.m"; sourceTree = "<group>"; };
-		9EBE42276C1E7A9EEC70373E5A310CC3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		817E71CFCCE371B0CA97A4E141BD03AD /* CSSEncryptAES.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSEncryptAES.m; path = CSSDeviceInfoTool/Classes/Encrypt/CSSEncryptAES.m; sourceTree = "<group>"; };
+		84A8D39350BDAC1DECF2A383CDF89E1B /* CSSDeviceInfoManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSSDeviceInfoManager-prefix.pch"; sourceTree = "<group>"; };
+		8CBCE536EAA65C7C992A68AA29EE695B /* CSSCGUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSCGUtilities.m; path = CSSKit/Classes/Quartz/CSSCGUtilities.m; sourceTree = "<group>"; };
+		8EBC8FDECC7734D502367D7F6ED55095 /* CSSEncryptAES.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSEncryptAES.h; path = CSSDeviceInfoTool/Classes/Encrypt/CSSEncryptAES.h; sourceTree = "<group>"; };
+		8F004296557B25B4E0AC9E38C0475A3B /* NSString+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Addition.h"; path = "CSSKit/Classes/Foundation/NSString+Addition.h"; sourceTree = "<group>"; };
+		927C0EC3A950C7334B43F634A587FE79 /* CSSDeviceInfoManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSSDeviceInfoManager-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A9BF80A777C46D8382921D1F8D66E6B /* CSSEncryptRSA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSEncryptRSA.m; path = CSSDeviceInfoTool/Classes/Encrypt/CSSEncryptRSA.m; sourceTree = "<group>"; };
 		A00F6360E0D676B3E93DED0A9A8CD5ED /* Pods-CSSDeviceInfoManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CSSDeviceInfoManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A073A605129A7DCDF8B398EE2DF8DE27 /* CSSDeviceInfoTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CSSDeviceInfoTool-dummy.m"; sourceTree = "<group>"; };
+		A2B91E812321BDFA4740F1BCEA8539E9 /* CSSNetworkClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSSNetworkClient-umbrella.h"; sourceTree = "<group>"; };
+		A50E616DA6A61A16C39450CDC3DB7B00 /* CSSDeviceInfoManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CSSDeviceInfoManager.modulemap; sourceTree = "<group>"; };
+		A58B8ED92C9224149B7DBD049EF1F465 /* CSSDeviceInfoTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSDeviceInfoTool.h; path = CSSDeviceInfoTool/Classes/DeviceInfo/CSSDeviceInfoTool.h; sourceTree = "<group>"; };
+		A731191278331269A16AEBACE6A4318E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A86940406E5977D102493E2863E81F18 /* Pods-CSSDeviceInfoManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSSDeviceInfoManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA6C36D5BF45EA781B2C29E92A3338B5 /* Pods-CSSDeviceInfoManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CSSDeviceInfoManager_Tests-umbrella.h"; sourceTree = "<group>"; };
+		AAC0FCAAF22E06F676028CBFDD6D0620 /* CSSNetworkClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSNetworkClient.m; path = CSSNetworkClient/Classes/CSSNetworkClient.m; sourceTree = "<group>"; };
+		B802D1794E580A1A5EC6CB4B1B29D2BE /* NSObject+Addition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Addition.m"; path = "CSSKit/Classes/Foundation/NSObject+Addition.m"; sourceTree = "<group>"; };
+		B80B014B73BD905D2D1B71E3B0D34A6D /* CSSDeviceInfoManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSDeviceInfoManager.m; path = CSSDeviceInfoManager/Classes/CSSDeviceInfoManager.m; sourceTree = "<group>"; };
+		BB55DF89F52BF560B0B3EEE011C5E53F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BBA37EEC69F378873A4243B4DC0BA142 /* CSSDeviceInfoTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSSDeviceInfoTool-prefix.pch"; sourceTree = "<group>"; };
+		BEAD3C4ABF6977171AC0C88772D026E0 /* CSSKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CSSKit-dummy.m"; sourceTree = "<group>"; };
+		C2778E1E88530A618246A37A64D4A26C /* CSSHTTPOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSHTTPOperation.h; path = CSSNetworkClient/Classes/CSSHTTPOperation.h; sourceTree = "<group>"; };
 		C3471CDADC59C0C23F034AC88E082D0B /* Pods-CSSDeviceInfoManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CSSDeviceInfoManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C9FD5F104276A1B2B9E0FAB406D98010 /* CSSDeviceInfoManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSSDeviceInfoManager-umbrella.h"; sourceTree = "<group>"; };
-		CF86C376564E021AB4B499650ED78A3C /* CSSDeviceInfoManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSSDeviceInfoManager-prefix.pch"; sourceTree = "<group>"; };
+		CA1E40D39147162FD37331F81F979AD2 /* CSSNetworkClient+Singletop.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CSSNetworkClient+Singletop.m"; path = "CSSNetworkClient/Classes/CSSNetworkClient+Singletop.m"; sourceTree = "<group>"; };
+		CBEEE8BB85975BA575C150B4F74FAC1F /* NSString+Addition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Addition.m"; path = "CSSKit/Classes/Foundation/NSString+Addition.m"; sourceTree = "<group>"; };
 		D0BB0A469A50BB00AB41214E3C72FC5C /* Pods-CSSDeviceInfoManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSSDeviceInfoManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DB70F0F029269F8C12661B481833C147 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF006C1EC9D3330C0A903F5BF2B8986E /* Pods_CSSDeviceInfoManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSSDeviceInfoManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4798B07B579433AA20E336FB5768005 /* CSSDeviceInfoTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSDeviceInfoTool.m; path = CSSDeviceInfoTool/Classes/DeviceInfo/CSSDeviceInfoTool.m; sourceTree = "<group>"; };
+		D8BC9EB83445EDF05A8FB4DED844CD79 /* CSSDeviceInfoManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSSDeviceInfoManager.xcconfig; sourceTree = "<group>"; };
+		D91D2DA3E8B7FBF6CFD53E3047519C4E /* NSDate+Addition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Addition.m"; path = "CSSKit/Classes/Foundation/NSDate+Addition.m"; sourceTree = "<group>"; };
+		D95B908EB57E3F2F0E44349D022A706A /* Pods_CSSDeviceInfoManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CSSDeviceInfoManager_Tests.framework; path = "Pods-CSSDeviceInfoManager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E192561128563968157C56D81FF8FF3B /* Pods-CSSDeviceInfoManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CSSDeviceInfoManager_Example-resources.sh"; sourceTree = "<group>"; };
+		E26AFF3EE24C9C2AA9D1BE3BB8DB6A8D /* CSSMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSMacros.h; path = CSSKit/Classes/Macros/CSSMacros.h; sourceTree = "<group>"; };
+		E332DAEB22F6BB2F14F45B7417538CD9 /* CSSTrackerSender.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSTrackerSender.m; path = CSSDeviceInfoManager/Classes/Sender/CSSTrackerSender.m; sourceTree = "<group>"; };
+		E569C27563B0FAF4E7A8A7F3C917E5A2 /* CSSDeviceInfoTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSSDeviceInfoTool-umbrella.h"; sourceTree = "<group>"; };
+		E8C171C11B1EC6376EF47FBE02592920 /* Pods_CSSDeviceInfoManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CSSDeviceInfoManager_Example.framework; path = "Pods-CSSDeviceInfoManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA50010CC2E1DD68AED22AB55CBFB09E /* Pods-CSSDeviceInfoManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSSDeviceInfoManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EFC796D721573EEF5EE979091F96E4A7 /* Pods-CSSDeviceInfoManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CSSDeviceInfoManager_Example-umbrella.h"; sourceTree = "<group>"; };
+		F111A6F97AFE828F586E7C8F5903CC55 /* CSSDeviceInfoTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CSSDeviceInfoTool.modulemap; sourceTree = "<group>"; };
 		F12056D356CD145A78F6DBAE28D7BF54 /* Pods-CSSDeviceInfoManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CSSDeviceInfoManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F90EA21DBDF32ADEE3275A3DF86B8881 /* CSSNetworkClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CSSNetworkClient-dummy.m"; sourceTree = "<group>"; };
+		FB071E9193D965896B60BCEB724E407F /* NSDictionary+Addition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Addition.m"; path = "CSSKit/Classes/Foundation/NSDictionary+Addition.m"; sourceTree = "<group>"; };
+		FB4B41A92BFE6B6EEAF472F112C31015 /* CSSDeviceInfoManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSDeviceInfoManager.h; path = CSSDeviceInfoManager/Classes/CSSDeviceInfoManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5F443B77D919DA6CDADC6A839C1F97CA /* Frameworks */ = {
+		47A369089DB0DEED018F8A3AF486EF22 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E10E5B01287303ECB64427755CD6BB24 /* Foundation.framework in Frameworks */,
+				33ED910F3FFA9FB025806A33A8233F88 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC33328B2BEC0D5FF7673C7B26A7D23E /* Frameworks */ = {
+		6770FF8916D5FBA0DEE07412D8211D63 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C019E8D333ED197B3D021BBFE0A0E0D /* Foundation.framework in Frameworks */,
+				854C50E91AAA73BC8C4A8B330B37A5CE /* CSSDeviceInfoTool.framework in Frameworks */,
+				D5A4960D9CF458F86D7E7CADA971E25B /* CSSKit.framework in Frameworks */,
+				AA52C0D4C16B7F1A7EB8E84C7C026902 /* CSSNetworkClient.framework in Frameworks */,
+				2AD8E802510D3A6FF46CE991611B7E95 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A5D523C919A47772C53EAE7C2A5527 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC559894F48EBAAE46F77A28D2E9E89E /* CSSKit.framework in Frameworks */,
+				D848C34082978523B0780B1CCFFC1576 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +271,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EEED41E2CC0F3F27BE39A59D11C42F0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AA9BF50F8ADB70B57A422068D367A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC8A4BB4E61E47BEC5A38166132A035 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE2DA2B53269BEA704E105BC0A695E28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C4F4F4DDFA1F7682DE0A3C959476478 /* CSSKit.framework in Frameworks */,
+				121DB4E761D746591EFB47EB21539B17 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,57 +303,184 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		154CC92102C539987428DD47A509D96A /* Pod */ = {
+		0D1067C5334A0F21F4BF44F71B89A0B7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0FCC962279D7BB67E873857B7D70AF08 /* CSSDeviceInfoManager.podspec */,
-				079892D21CB22ABFD6677242C46B2E89 /* LICENSE */,
-				9EBE42276C1E7A9EEC70373E5A310CC3 /* README.md */,
+				A50E616DA6A61A16C39450CDC3DB7B00 /* CSSDeviceInfoManager.modulemap */,
+				D8BC9EB83445EDF05A8FB4DED844CD79 /* CSSDeviceInfoManager.xcconfig */,
+				66779C1D3ABF0B087938866B22347AC0 /* CSSDeviceInfoManager-dummy.m */,
+				84A8D39350BDAC1DECF2A383CDF89E1B /* CSSDeviceInfoManager-prefix.pch */,
+				927C0EC3A950C7334B43F634A587FE79 /* CSSDeviceInfoManager-umbrella.h */,
+				2CBE20CCD755B405596663A84B652D49 /* Info.plist */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CSSDeviceInfoManager";
 			sourceTree = "<group>";
 		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+		0D1D203A1151F3BB203335721D2AB709 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+				678FAC051E4A156254E727DB8A62FEAB /* CSSDeviceInfoTool.framework */,
+				578BE0D5F49C3FD9F6941885C3EE111F /* CSSKit.framework */,
+				1820AA47D8DD420DF49D9F0BD547AD0B /* CSSNetworkClient.framework */,
+				21584AAFCCE222A80408BBDF4E060317 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B824374B8EDF2FB892D39272DD58770 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				718CE6083C60C171A5711F0E85365FED /* CSSKit.modulemap */,
+				3DAA35561DF3E938955EBDF06A82D51D /* CSSKit.xcconfig */,
+				BEAD3C4ABF6977171AC0C88772D026E0 /* CSSKit-dummy.m */,
+				455E086C90EDCC86F0C1F84B474E508D /* CSSKit-prefix.pch */,
+				5A26AD3D322A5D942AD625C893609EDB /* CSSKit-umbrella.h */,
+				66C3FBD946A178A2C2F7DE763C6E3415 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CSSKit";
+			sourceTree = "<group>";
+		};
+		21584AAFCCE222A80408BBDF4E060317 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A731191278331269A16AEBACE6A4318E /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		229960E170CA0C90BA381A7C07FD7ED3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F3A738A4556C316B7A846AE03711C6B /* CSSDeviceInfoManager.framework */,
+				57F634E86185CE549DD16BC106EA9670 /* CSSDeviceInfoTool.framework */,
+				733462619213CBFE96F8B57C18D346E8 /* CSSKit.framework */,
+				12CE77927EB10D168E70DA8880371801 /* CSSNetworkClient.framework */,
+				E8C171C11B1EC6376EF47FBE02592920 /* Pods_CSSDeviceInfoManager_Example.framework */,
+				D95B908EB57E3F2F0E44349D022A706A /* Pods_CSSDeviceInfoManager_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F408DF39E552CF0D3300D0AB575D106 /* Sender */ = {
+			isa = PBXGroup;
+			children = (
+				61640E6D225BF93A39EDE7E8088C682E /* CSSTrackerSender.h */,
+				E332DAEB22F6BB2F14F45B7417538CD9 /* CSSTrackerSender.m */,
+			);
+			name = Sender;
+			sourceTree = "<group>";
+		};
+		5390707F9FAFF3D7BA82913D408BABD8 /* CSSNetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				C2778E1E88530A618246A37A64D4A26C /* CSSHTTPOperation.h */,
+				51E6A3FE7C8527328ED63CC276E67B76 /* CSSHTTPOperation.m */,
+				436EDE02C082577C93E0C4ACEBD3EA82 /* CSSNetworkClient.h */,
+				AAC0FCAAF22E06F676028CBFDD6D0620 /* CSSNetworkClient.m */,
+				28E98418CCCC32D4B7136EF311931660 /* CSSNetworkClient+Singletop.h */,
+				CA1E40D39147162FD37331F81F979AD2 /* CSSNetworkClient+Singletop.m */,
+				AE52FF953FD27E82AB3C7F3682E1E6CF /* Support Files */,
+			);
+			name = CSSNetworkClient;
+			path = CSSNetworkClient;
+			sourceTree = "<group>";
+		};
+		78CEEF8DDFAE64C5DEFEC3DA55A82D02 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				5EB8D21DCD0605870812F61A385C17E6 /* NSArray+Addition.h */,
+				6FCDF92AAB74CF2A45918BA3CD8F8CFC /* NSArray+Addition.m */,
+				0438203B36888ED2148F1762E606E099 /* NSData+Addition.h */,
+				46A9A5B3C6C6E2FF9FEDB87CE7F91C84 /* NSData+Addition.m */,
+				5B57A58D53AC86069EA910B6E9EC0EE2 /* NSDate+Addition.h */,
+				D91D2DA3E8B7FBF6CFD53E3047519C4E /* NSDate+Addition.m */,
+				15414E920D584EFF24956848B5EC1BB5 /* NSDictionary+Addition.h */,
+				FB071E9193D965896B60BCEB724E407F /* NSDictionary+Addition.m */,
+				65F2865F4F8D35909D3BEA50D02CF64E /* NSKeyedUnarchiver+Addition.h */,
+				649288B4B439E0B70B72687F43BB534E /* NSKeyedUnarchiver+Addition.m */,
+				165003F0D6AB6398DB78FC55A198603A /* NSObject+Addition.h */,
+				B802D1794E580A1A5EC6CB4B1B29D2BE /* NSObject+Addition.m */,
+				8F004296557B25B4E0AC9E38C0475A3B /* NSString+Addition.h */,
+				CBEEE8BB85975BA575C150B4F74FAC1F /* NSString+Addition.m */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		7D3C4DE0787D38A277973451B3F7B2F8 /* CSSDeviceInfoTool */ = {
+			isa = PBXGroup;
+			children = (
+				A58B8ED92C9224149B7DBD049EF1F465 /* CSSDeviceInfoTool.h */,
+				D4798B07B579433AA20E336FB5768005 /* CSSDeviceInfoTool.m */,
+				8EBC8FDECC7734D502367D7F6ED55095 /* CSSEncryptAES.h */,
+				817E71CFCCE371B0CA97A4E141BD03AD /* CSSEncryptAES.m */,
+				33A7CE045CB92269287BFB2BB316AB10 /* CSSEncryptRSA.h */,
+				9A9BF80A777C46D8382921D1F8D66E6B /* CSSEncryptRSA.m */,
+				F8C3DDAC0E6134C10E30EE9D5B6BA351 /* Support Files */,
+			);
+			name = CSSDeviceInfoTool;
+			path = CSSDeviceInfoTool;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				AC688B48E02E04738A261C7B7F6EC13B /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				7F303B7AFA8CC65E934D8769632859FC /* Products */,
+				9AF495E536EE83D8F7E07797386E67BF /* Development Pods */,
+				0D1D203A1151F3BB203335721D2AB709 /* Frameworks */,
+				83FE95F7C9004B47172E1BE1E9339574 /* Pods */,
+				229960E170CA0C90BA381A7C07FD7ED3 /* Products */,
 				09286BDC3C4492B9E9D6438B69E4FF85 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7F303B7AFA8CC65E934D8769632859FC /* Products */ = {
+		83FE95F7C9004B47172E1BE1E9339574 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				57172B99B2C68A7664E2CE9AFB30C6E6 /* CSSDeviceInfoManager.framework */,
-				92C1D88E6BE018DCDE7D2950047E6A57 /* Pods_CSSDeviceInfoManager_Example.framework */,
-				DF006C1EC9D3330C0A903F5BF2B8986E /* Pods_CSSDeviceInfoManager_Tests.framework */,
+				7D3C4DE0787D38A277973451B3F7B2F8 /* CSSDeviceInfoTool */,
+				A443E7354F42C3BAC65A112929B9A527 /* CSSKit */,
+				5390707F9FAFF3D7BA82913D408BABD8 /* CSSNetworkClient */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		A2D23C8406687DE2B0D1DFE8395FC27B /* Support Files */ = {
+		854965811432A1F33DBF4C6BE37090FB /* Quartz */ = {
 			isa = PBXGroup;
 			children = (
-				82484B27C2795F8D0A79D19CC4192C7A /* CSSDeviceInfoManager.modulemap */,
-				230FA7905485CBA6AC492F633D77D161 /* CSSDeviceInfoManager.xcconfig */,
-				9AE90C4A767BBFA4D9C03160446D786E /* CSSDeviceInfoManager-dummy.m */,
-				CF86C376564E021AB4B499650ED78A3C /* CSSDeviceInfoManager-prefix.pch */,
-				C9FD5F104276A1B2B9E0FAB406D98010 /* CSSDeviceInfoManager-umbrella.h */,
-				DB70F0F029269F8C12661B481833C147 /* Info.plist */,
+				0218E84C5272D1D2677255CA5EBEF1DB /* CSSCGUtilities.h */,
+				8CBCE536EAA65C7C992A68AA29EE695B /* CSSCGUtilities.m */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/CSSDeviceInfoManager";
+			name = Quartz;
+			sourceTree = "<group>";
+		};
+		8DD2A52D80DC1B8AB243A696FDB8011A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06719A80CB94DEE0C8DC2C14DA977C8C /* MCLocationManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AF495E536EE83D8F7E07797386E67BF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4D14C3365338F5A76A9804366D59F39 /* CSSDeviceInfoManager */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A443E7354F42C3BAC65A112929B9A527 /* CSSKit */ = {
+			isa = PBXGroup;
+			children = (
+				78CEEF8DDFAE64C5DEFEC3DA55A82D02 /* Foundation */,
+				E0ED3E40FEAF7C060BDD939A872CCFD6 /* Macros */,
+				854965811432A1F33DBF4C6BE37090FB /* Quartz */,
+				1B824374B8EDF2FB892D39272DD58770 /* Support Files */,
+				E4B5CC1E671341D5A496ED49EAC6163F /* UI */,
+			);
+			name = CSSKit;
+			path = CSSKit;
 			sourceTree = "<group>";
 		};
 		AA352812B4DCC70DA018BFF54DF48BA5 /* Pods-CSSDeviceInfoManager_Tests */ = {
@@ -180,20 +501,42 @@
 			path = "Target Support Files/Pods-CSSDeviceInfoManager_Tests";
 			sourceTree = "<group>";
 		};
-		AC688B48E02E04738A261C7B7F6EC13B /* Development Pods */ = {
+		ACE3328421D968ED0D6317B8A441718F /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				F85A41160D9A3CE1E702769E821C4A38 /* CSSDeviceInfoManager */,
+				6C94CB598744235D69A43449825407EE /* CSSDeviceInfoManager.podspec */,
+				BB55DF89F52BF560B0B3EEE011C5E53F /* LICENSE */,
+				6CAF782C10F78B6165EF5BF9218BCC69 /* README.md */,
 			);
-			name = "Development Pods";
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		AE52FF953FD27E82AB3C7F3682E1E6CF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+				7477126B73BCF6749D9EC2B749CEB330 /* CSSNetworkClient.modulemap */,
+				41A6B3A139294A4862ECF94DB60A0C21 /* CSSNetworkClient.xcconfig */,
+				F90EA21DBDF32ADEE3275A3DF86B8881 /* CSSNetworkClient-dummy.m */,
+				69127DF7AD482D5A8EB92693AE840CA9 /* CSSNetworkClient-prefix.pch */,
+				A2B91E812321BDFA4740F1BCEA8539E9 /* CSSNetworkClient-umbrella.h */,
+				2C4F3C24D7501E37740A361D9ED214A7 /* Info.plist */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/CSSNetworkClient";
+			sourceTree = "<group>";
+		};
+		C4D14C3365338F5A76A9804366D59F39 /* CSSDeviceInfoManager */ = {
+			isa = PBXGroup;
+			children = (
+				FB4B41A92BFE6B6EEAF472F112C31015 /* CSSDeviceInfoManager.h */,
+				B80B014B73BD905D2D1B71E3B0D34A6D /* CSSDeviceInfoManager.m */,
+				8DD2A52D80DC1B8AB243A696FDB8011A /* Frameworks */,
+				ACE3328421D968ED0D6317B8A441718F /* Pod */,
+				3F408DF39E552CF0D3300D0AB575D106 /* Sender */,
+				0D1067C5334A0F21F4BF44F71B89A0B7 /* Support Files */,
+			);
+			name = CSSDeviceInfoManager;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		D34A8991CDC628FD19080F790FEBE12C /* Pods-CSSDeviceInfoManager_Example */ = {
@@ -214,32 +557,87 @@
 			path = "Target Support Files/Pods-CSSDeviceInfoManager_Example";
 			sourceTree = "<group>";
 		};
-		F85A41160D9A3CE1E702769E821C4A38 /* CSSDeviceInfoManager */ = {
+		E0ED3E40FEAF7C060BDD939A872CCFD6 /* Macros */ = {
 			isa = PBXGroup;
 			children = (
-				154CC92102C539987428DD47A509D96A /* Pod */,
-				A2D23C8406687DE2B0D1DFE8395FC27B /* Support Files */,
+				E26AFF3EE24C9C2AA9D1BE3BB8DB6A8D /* CSSMacros.h */,
 			);
-			name = CSSDeviceInfoManager;
-			path = ../..;
+			name = Macros;
+			sourceTree = "<group>";
+		};
+		E4B5CC1E671341D5A496ED49EAC6163F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				15B6AC1D8F416C2866B76CDE3933AB80 /* UIView+Addition.h */,
+				5F8F7B9A1846F3DDABE24022AFD1271D /* UIView+Addition.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		F8C3DDAC0E6134C10E30EE9D5B6BA351 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F111A6F97AFE828F586E7C8F5903CC55 /* CSSDeviceInfoTool.modulemap */,
+				2F07B661F023B9E5B971FB3CBA76246D /* CSSDeviceInfoTool.xcconfig */,
+				A073A605129A7DCDF8B398EE2DF8DE27 /* CSSDeviceInfoTool-dummy.m */,
+				BBA37EEC69F378873A4243B4DC0BA142 /* CSSDeviceInfoTool-prefix.pch */,
+				E569C27563B0FAF4E7A8A7F3C917E5A2 /* CSSDeviceInfoTool-umbrella.h */,
+				635DD58A31680CE41E0C08D729E419E4 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CSSDeviceInfoTool";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		523D642152FBB0C22CFED08F92345153 /* Headers */ = {
+		27AEB3DAA927C581E6AA635627A15F3E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B24CAF10DA4ADD553810927C16E18AC3 /* Pods-CSSDeviceInfoManager_Example-umbrella.h in Headers */,
+				0BD40DA3E909271BD4F05B89D84FB8D3 /* CSSDeviceInfoTool-umbrella.h in Headers */,
+				9C08FBBA1C981E827DB156DC3F9F4A16 /* CSSDeviceInfoTool.h in Headers */,
+				6D73CE6B1B2B0C6BB014829C91B67399 /* CSSEncryptAES.h in Headers */,
+				0C78FCFAA5B7081E971CF1A7638E3432 /* CSSEncryptRSA.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D05D97DB08FD445AFFD57A8FF0176193 /* Headers */ = {
+		B763BCC139F3ED88D51ACB0F98FACEF0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A22B024C22A4360C90A9A3906CAE3880 /* CSSDeviceInfoManager-umbrella.h in Headers */,
+				4FBA9A8EC7C77887348D422F28EB8861 /* CSSHTTPOperation.h in Headers */,
+				7B6C2D325D73464102DFF669A34B487B /* CSSNetworkClient+Singletop.h in Headers */,
+				82993E6B25C09C2B208CF877DE2DA929 /* CSSNetworkClient-umbrella.h in Headers */,
+				CB9AF07A07E63A983AD5C5BE67D3F90E /* CSSNetworkClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D4C48476D22CB8E841AA23D8246F02 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A7EE17BD99E2DC8D94DEF4742F25853 /* CSSCGUtilities.h in Headers */,
+				D804A4BB7FFD709460B6A6A116E30C1C /* CSSKit-umbrella.h in Headers */,
+				73F0D901411E3C55F9AD168D47CD85FE /* CSSMacros.h in Headers */,
+				2DDA03AF83CEB63AAB51BD492BB9762A /* NSArray+Addition.h in Headers */,
+				73FBCB340E5914F78B83B36514A9BB6D /* NSData+Addition.h in Headers */,
+				0224261C2247A3D48984DEB1235A0FA2 /* NSDate+Addition.h in Headers */,
+				9F72E6C8D0A223D9F704DB6FCCCE91F2 /* NSDictionary+Addition.h in Headers */,
+				5F58C307ADBD67C95D84EE1586F705F8 /* NSKeyedUnarchiver+Addition.h in Headers */,
+				779EC513A9EA99B6B1AAB65AEE62CCF0 /* NSObject+Addition.h in Headers */,
+				59E98ECA54392B43B0AAF926F5B867BE /* NSString+Addition.h in Headers */,
+				36229D1AEB3F61219450E4A939F46D75 /* UIView+Addition.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6C594FF05C4BD69094387F8A7F63C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90B9B2D74445CF1E0461CFA7254E1B6D /* CSSDeviceInfoManager-umbrella.h in Headers */,
+				01D84ECE8D668255B2331A780F90C5E6 /* CSSDeviceInfoManager.h in Headers */,
+				A410C695A93237E27A4BD5471F490A82 /* CSSTrackerSender.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,44 +649,114 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC10E39798A2BA4D20290FF97D6877B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518D17902D5DC5196C4479F973CFA79E /* Pods-CSSDeviceInfoManager_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		64D94C339E41B2F6AF32EB0979483E47 /* CSSDeviceInfoManager */ = {
+		047DD3A6D8144A1F68F2395C186983BC /* Pods-CSSDeviceInfoManager_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A8C70737D5474E1D214028343CB4D05A /* Build configuration list for PBXNativeTarget "CSSDeviceInfoManager" */;
+			buildConfigurationList = 074136D651AC3AF87AAE3D166D2D97EB /* Build configuration list for PBXNativeTarget "Pods-CSSDeviceInfoManager_Example" */;
 			buildPhases = (
-				D05D97DB08FD445AFFD57A8FF0176193 /* Headers */,
-				F5F6B26811D8E289B8AA0A08900C5A9D /* Sources */,
-				BC33328B2BEC0D5FF7673C7B26A7D23E /* Frameworks */,
-				B91C29A59B0D3EE5A79B040C8A00F02F /* Resources */,
+				FC10E39798A2BA4D20290FF97D6877B4 /* Headers */,
+				A62BB6B2CA25DCEE043B8E9973C9F075 /* Sources */,
+				D2AA9BF50F8ADB70B57A422068D367A4 /* Frameworks */,
+				D5E53C8AF53BB963F7ECE00461D7BFE2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = CSSDeviceInfoManager;
-			productName = CSSDeviceInfoManager;
-			productReference = 57172B99B2C68A7664E2CE9AFB30C6E6 /* CSSDeviceInfoManager.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C56E2019D9B52A18DBD994C31781CC52 /* Pods-CSSDeviceInfoManager_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A72E9228B184465C3BD96735BC6B4348 /* Build configuration list for PBXNativeTarget "Pods-CSSDeviceInfoManager_Example" */;
-			buildPhases = (
-				523D642152FBB0C22CFED08F92345153 /* Headers */,
-				E8A4990439255C7E3289E94727F0D99B /* Sources */,
-				5F443B77D919DA6CDADC6A839C1F97CA /* Frameworks */,
-				F0A866D883EAA0752C9C783C6EA315B1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1E510DD71E6B56ADDC28631596F4D59D /* PBXTargetDependency */,
+				8C8161294277E24D789A647DEC26470F /* PBXTargetDependency */,
+				69909E1623F17833052D6A8C1D8ECCC7 /* PBXTargetDependency */,
+				3EA50BA45BCA9B1A1CFF737EC33E0D25 /* PBXTargetDependency */,
+				64A5E2231A681AC66AACB4A9A87C316E /* PBXTargetDependency */,
 			);
 			name = "Pods-CSSDeviceInfoManager_Example";
 			productName = "Pods-CSSDeviceInfoManager_Example";
-			productReference = 92C1D88E6BE018DCDE7D2950047E6A57 /* Pods_CSSDeviceInfoManager_Example.framework */;
+			productReference = E8C171C11B1EC6376EF47FBE02592920 /* Pods_CSSDeviceInfoManager_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		298D0A257F6229FAB8D653539F16424A /* CSSKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54BE29B77F44418602E466FD621EDD02 /* Build configuration list for PBXNativeTarget "CSSKit" */;
+			buildPhases = (
+				E8D4C48476D22CB8E841AA23D8246F02 /* Headers */,
+				C907F03D2061C5E6160AC1901186FA30 /* Sources */,
+				47A369089DB0DEED018F8A3AF486EF22 /* Frameworks */,
+				B0D64DADB3892FD3974273308F23DE81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSSKit;
+			productName = CSSKit;
+			productReference = 733462619213CBFE96F8B57C18D346E8 /* CSSKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3149E072F1879C8CB7AFFC597FECDB60 /* CSSDeviceInfoTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 401683563D419644C86E30DD899DD9F0 /* Build configuration list for PBXNativeTarget "CSSDeviceInfoTool" */;
+			buildPhases = (
+				27AEB3DAA927C581E6AA635627A15F3E /* Headers */,
+				0D10EB19BC05299606831CF036ADE474 /* Sources */,
+				DE2DA2B53269BEA704E105BC0A695E28 /* Frameworks */,
+				6FFB212F6A552C8F1B59387AB0F18735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B7B7835488207BEDE0B481F97970473 /* PBXTargetDependency */,
+			);
+			name = CSSDeviceInfoTool;
+			productName = CSSDeviceInfoTool;
+			productReference = 57F634E86185CE549DD16BC106EA9670 /* CSSDeviceInfoTool.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		32927B4A22FA0128A83F78842FA2D328 /* CSSDeviceInfoManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13F939EA1804CBF459FB8AADAA7883A2 /* Build configuration list for PBXNativeTarget "CSSDeviceInfoManager" */;
+			buildPhases = (
+				EA6C594FF05C4BD69094387F8A7F63C3 /* Headers */,
+				31B5E220F471E8AC6D45B8E50E620C23 /* Sources */,
+				6770FF8916D5FBA0DEE07412D8211D63 /* Frameworks */,
+				B3194D7E0A9538FDF1ABC9E659638FAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DF9E9925D8D5B490CA2559908CBE0B6 /* PBXTargetDependency */,
+				B0DFA9304133319BFF334EB56500A659 /* PBXTargetDependency */,
+				EF143836A7494EFCEC6251CFFCDF7C11 /* PBXTargetDependency */,
+			);
+			name = CSSDeviceInfoManager;
+			productName = CSSDeviceInfoManager;
+			productReference = 0F3A738A4556C316B7A846AE03711C6B /* CSSDeviceInfoManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3C84DDD559B213798F8AEDA62042BA6C /* CSSNetworkClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C97534BAC178D53A17BE10E2C54A8F5 /* Build configuration list for PBXNativeTarget "CSSNetworkClient" */;
+			buildPhases = (
+				B763BCC139F3ED88D51ACB0F98FACEF0 /* Headers */,
+				852B3023FC350ADB9E918CCBCAA54C34 /* Sources */,
+				B6A5D523C919A47772C53EAE7C2A5527 /* Frameworks */,
+				504FDCC630DC8479ED6E86C6BF24518A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09DE86EF4C0C36D5A4484E1049BC9FB0 /* PBXTargetDependency */,
+			);
+			name = CSSNetworkClient;
+			productName = CSSNetworkClient;
+			productReference = 12CE77927EB10D168E70DA8880371801 /* CSSNetworkClient.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EE1B79A32D39C2130F9B90F9E515A47B /* Pods-CSSDeviceInfoManager_Tests */ = {
@@ -307,7 +775,7 @@
 			);
 			name = "Pods-CSSDeviceInfoManager_Tests";
 			productName = "Pods-CSSDeviceInfoManager_Tests";
-			productReference = DF006C1EC9D3330C0A903F5BF2B8986E /* Pods_CSSDeviceInfoManager_Tests.framework */;
+			productReference = D95B908EB57E3F2F0E44349D022A706A /* Pods_CSSDeviceInfoManager_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -327,12 +795,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7F303B7AFA8CC65E934D8769632859FC /* Products */;
+			productRefGroup = 229960E170CA0C90BA381A7C07FD7ED3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				64D94C339E41B2F6AF32EB0979483E47 /* CSSDeviceInfoManager */,
-				C56E2019D9B52A18DBD994C31781CC52 /* Pods-CSSDeviceInfoManager_Example */,
+				32927B4A22FA0128A83F78842FA2D328 /* CSSDeviceInfoManager */,
+				3149E072F1879C8CB7AFFC597FECDB60 /* CSSDeviceInfoTool */,
+				298D0A257F6229FAB8D653539F16424A /* CSSKit */,
+				3C84DDD559B213798F8AEDA62042BA6C /* CSSNetworkClient */,
+				047DD3A6D8144A1F68F2395C186983BC /* Pods-CSSDeviceInfoManager_Example */,
 				EE1B79A32D39C2130F9B90F9E515A47B /* Pods-CSSDeviceInfoManager_Tests */,
 			);
 		};
@@ -346,14 +817,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B91C29A59B0D3EE5A79B040C8A00F02F /* Resources */ = {
+		504FDCC630DC8479ED6E86C6BF24518A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0A866D883EAA0752C9C783C6EA315B1 /* Resources */ = {
+		6FFB212F6A552C8F1B59387AB0F18735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0D64DADB3892FD3974273308F23DE81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3194D7E0A9538FDF1ABC9E659638FAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E53C8AF53BB963F7ECE00461D7BFE2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -363,6 +855,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0D10EB19BC05299606831CF036ADE474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038E7720DDD2B70A1502650B2AA052F5 /* CSSDeviceInfoTool-dummy.m in Sources */,
+				37A81B66D11643D75C409A8294099B94 /* CSSDeviceInfoTool.m in Sources */,
+				4BBCEF6FC02935FA747BCB16320DBCAD /* CSSEncryptAES.m in Sources */,
+				128BA2E5384043C7CBF16B66DCE10A16 /* CSSEncryptRSA.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31B5E220F471E8AC6D45B8E50E620C23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF8A92429676596D165E3831061D149 /* CSSDeviceInfoManager-dummy.m in Sources */,
+				C7555D660029EA317B82104AD4EA72AA /* CSSDeviceInfoManager.m in Sources */,
+				F191AC52961A906BD30C40448BC9C77B /* CSSTrackerSender.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852B3023FC350ADB9E918CCBCAA54C34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E62D938DD4EDB0FCF30AD5E48B816C00 /* CSSHTTPOperation.m in Sources */,
+				43AF8452D38D1BA9B4AEABD826F6A3BE /* CSSNetworkClient+Singletop.m in Sources */,
+				368BA1DFAD3D83ED976689158A3ABA31 /* CSSNetworkClient-dummy.m in Sources */,
+				94EDEB0F4DA5CFE5CFB43D6FFD30BDD0 /* CSSNetworkClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8AA475977E80C34667974805CEA21F62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,73 +895,97 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8A4990439255C7E3289E94727F0D99B /* Sources */ = {
+		A62BB6B2CA25DCEE043B8E9973C9F075 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				101C14EC919CF10619C983EA42CE8956 /* Pods-CSSDeviceInfoManager_Example-dummy.m in Sources */,
+				3BAC68467873EE768F4AB7870EEBFFEE /* Pods-CSSDeviceInfoManager_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5F6B26811D8E289B8AA0A08900C5A9D /* Sources */ = {
+		C907F03D2061C5E6160AC1901186FA30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86D14A9CB5555F5BE348E84B306C7EFC /* CSSDeviceInfoManager-dummy.m in Sources */,
+				F2EC39BD0350136F034C2BD26DF95BA5 /* CSSCGUtilities.m in Sources */,
+				8164745FF6AD6746C3F17EF4949296E5 /* CSSKit-dummy.m in Sources */,
+				BD9612A63B60B28E85D2E7A09B13A13B /* NSArray+Addition.m in Sources */,
+				4E33503992A52BCD31AFBE3078F35391 /* NSData+Addition.m in Sources */,
+				93A7FF62D3C05BAB04F72B8BDF3D0B8B /* NSDate+Addition.m in Sources */,
+				3030334DA106AA30126F7E312C8FD156 /* NSDictionary+Addition.m in Sources */,
+				14A8E9E3B4D2920D95D84F04E989759D /* NSKeyedUnarchiver+Addition.m in Sources */,
+				C892310541C9CA509A0C4E8534482D14 /* NSObject+Addition.m in Sources */,
+				3404C1D03850F9C20D87DD44AE2D0C5B /* NSString+Addition.m in Sources */,
+				77FB7F8FCE6B56E083BD65C4228E9AA2 /* UIView+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1E510DD71E6B56ADDC28631596F4D59D /* PBXTargetDependency */ = {
+		09DE86EF4C0C36D5A4484E1049BC9FB0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = CSSDeviceInfoManager;
-			target = 64D94C339E41B2F6AF32EB0979483E47 /* CSSDeviceInfoManager */;
-			targetProxy = 9AEC890F4EDBD1E172EEA1E0860CF3B9 /* PBXContainerItemProxy */;
+			name = CSSKit;
+			target = 298D0A257F6229FAB8D653539F16424A /* CSSKit */;
+			targetProxy = 12C20EB23E295D70D47FFE0D2472BDEC /* PBXContainerItemProxy */;
+		};
+		2DF9E9925D8D5B490CA2559908CBE0B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CSSDeviceInfoTool;
+			target = 3149E072F1879C8CB7AFFC597FECDB60 /* CSSDeviceInfoTool */;
+			targetProxy = 3B5545F4E7847CB09871934E387F2993 /* PBXContainerItemProxy */;
+		};
+		3EA50BA45BCA9B1A1CFF737EC33E0D25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CSSKit;
+			target = 298D0A257F6229FAB8D653539F16424A /* CSSKit */;
+			targetProxy = C8FECE3E767CB74E121772B13A1E897B /* PBXContainerItemProxy */;
 		};
 		4FE99E03FD99E8A9475971DB5732C5FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-CSSDeviceInfoManager_Example";
-			target = C56E2019D9B52A18DBD994C31781CC52 /* Pods-CSSDeviceInfoManager_Example */;
+			target = 047DD3A6D8144A1F68F2395C186983BC /* Pods-CSSDeviceInfoManager_Example */;
 			targetProxy = BB5ED1856518B7859DA0A2A84052F9CC /* PBXContainerItemProxy */;
+		};
+		64A5E2231A681AC66AACB4A9A87C316E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CSSNetworkClient;
+			target = 3C84DDD559B213798F8AEDA62042BA6C /* CSSNetworkClient */;
+			targetProxy = DD4542758E4F644F9E2DF3BB66864D01 /* PBXContainerItemProxy */;
+		};
+		69909E1623F17833052D6A8C1D8ECCC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CSSDeviceInfoTool;
+			target = 3149E072F1879C8CB7AFFC597FECDB60 /* CSSDeviceInfoTool */;
+			targetProxy = 3BA3264B2CA9836E6EE7ECBA3126356C /* PBXContainerItemProxy */;
+		};
+		6B7B7835488207BEDE0B481F97970473 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CSSKit;
+			target = 298D0A257F6229FAB8D653539F16424A /* CSSKit */;
+			targetProxy = 0B663F899E4696C858003D1B1DE0832A /* PBXContainerItemProxy */;
+		};
+		8C8161294277E24D789A647DEC26470F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CSSDeviceInfoManager;
+			target = 32927B4A22FA0128A83F78842FA2D328 /* CSSDeviceInfoManager */;
+			targetProxy = 379866F152C9B5B16C72867700AE4036 /* PBXContainerItemProxy */;
+		};
+		B0DFA9304133319BFF334EB56500A659 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CSSKit;
+			target = 298D0A257F6229FAB8D653539F16424A /* CSSKit */;
+			targetProxy = 62C87B13D35A14FB28EB3884F626400A /* PBXContainerItemProxy */;
+		};
+		EF143836A7494EFCEC6251CFFCDF7C11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CSSNetworkClient;
+			target = 3C84DDD559B213798F8AEDA62042BA6C /* CSSNetworkClient */;
+			targetProxy = 1B5317BC308412311FB7958467C58109 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		378E29B6928DAA8AEE58679085939B05 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0BB0A469A50BB00AB41214E3C72FC5C /* Pods-CSSDeviceInfoManager_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CSSDeviceInfoManager_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CSSDeviceInfoManager_Example/Pods-CSSDeviceInfoManager_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		4785F0206A0D92AD5E74A6B0B83E45A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA50010CC2E1DD68AED22AB55CBFB09E /* Pods-CSSDeviceInfoManager_Tests.release.xcconfig */;
@@ -472,9 +1020,70 @@
 			};
 			name = Release;
 		};
-		6DDAB99521D64AD82CAAB13AB5641943 /* Debug */ = {
+		4FB2A8050385EA69F5A4D6EE81C9C564 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 230FA7905485CBA6AC492F633D77D161 /* CSSDeviceInfoManager.xcconfig */;
+			baseConfigurationReference = 41A6B3A139294A4862ECF94DB60A0C21 /* CSSNetworkClient.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CSSNetworkClient/CSSNetworkClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSSNetworkClient/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CSSNetworkClient/CSSNetworkClient.modulemap";
+				PRODUCT_MODULE_NAME = CSSNetworkClient;
+				PRODUCT_NAME = CSSNetworkClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		50883FAFF64F878A01E8B243B18793CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A6B3A139294A4862ECF94DB60A0C21 /* CSSNetworkClient.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CSSNetworkClient/CSSNetworkClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSSNetworkClient/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CSSNetworkClient/CSSNetworkClient.modulemap";
+				PRODUCT_MODULE_NAME = CSSNetworkClient;
+				PRODUCT_NAME = CSSNetworkClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5369A10368AD65A28742ADC1CDE864CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8BC9EB83445EDF05A8FB4DED844CD79 /* CSSDeviceInfoManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -493,6 +1102,100 @@
 				MODULEMAP_FILE = "Target Support Files/CSSDeviceInfoManager/CSSDeviceInfoManager.modulemap";
 				PRODUCT_MODULE_NAME = CSSDeviceInfoManager;
 				PRODUCT_NAME = CSSDeviceInfoManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		58718118D0695C407A342A144CE771FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0BB0A469A50BB00AB41214E3C72FC5C /* Pods-CSSDeviceInfoManager_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSSDeviceInfoManager_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSSDeviceInfoManager_Example/Pods-CSSDeviceInfoManager_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5C01376222C5A11B3FEB0E70DB903E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8BC9EB83445EDF05A8FB4DED844CD79 /* CSSDeviceInfoManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CSSDeviceInfoManager/CSSDeviceInfoManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSSDeviceInfoManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CSSDeviceInfoManager/CSSDeviceInfoManager.modulemap";
+				PRODUCT_MODULE_NAME = CSSDeviceInfoManager;
+				PRODUCT_NAME = CSSDeviceInfoManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5F816AC4CAF7E0C9804F41103FD52499 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F07B661F023B9E5B971FB3CBA76246D /* CSSDeviceInfoTool.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CSSDeviceInfoTool/CSSDeviceInfoTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSSDeviceInfoTool/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CSSDeviceInfoTool/CSSDeviceInfoTool.modulemap";
+				PRODUCT_MODULE_NAME = CSSDeviceInfoTool;
+				PRODUCT_NAME = CSSDeviceInfoTool;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -594,6 +1297,101 @@
 			};
 			name = Release;
 		};
+		9F716F053488595296FF75B1146E20AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C91E23FFEF8B57446D5C9FEECB01320 /* Pods-CSSDeviceInfoManager_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSSDeviceInfoManager_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSSDeviceInfoManager_Example/Pods-CSSDeviceInfoManager_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B48199DA01A5D7BDA26561588E28BB83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DAA35561DF3E938955EBDF06A82D51D /* CSSKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CSSKit/CSSKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSSKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CSSKit/CSSKit.modulemap";
+				PRODUCT_MODULE_NAME = CSSKit;
+				PRODUCT_NAME = CSSKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C6378C905B0A4B36FA7FE26436691844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F07B661F023B9E5B971FB3CBA76246D /* CSSDeviceInfoTool.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CSSDeviceInfoTool/CSSDeviceInfoTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSSDeviceInfoTool/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CSSDeviceInfoTool/CSSDeviceInfoTool.modulemap";
+				PRODUCT_MODULE_NAME = CSSDeviceInfoTool;
+				PRODUCT_NAME = CSSDeviceInfoTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D11C82AF2204B41B80412B8DC9C1D652 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -658,9 +1456,9 @@
 			};
 			name = Debug;
 		};
-		D127E3C8216FFFAA4929286DEEE1845D /* Release */ = {
+		E672D46B3C67077FEC16A77AA9541B04 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 230FA7905485CBA6AC492F633D77D161 /* CSSDeviceInfoManager.xcconfig */;
+			baseConfigurationReference = 3DAA35561DF3E938955EBDF06A82D51D /* CSSKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -671,14 +1469,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CSSDeviceInfoManager/CSSDeviceInfoManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CSSDeviceInfoManager/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CSSKit/CSSKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSSKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CSSDeviceInfoManager/CSSDeviceInfoManager.modulemap";
-				PRODUCT_MODULE_NAME = CSSDeviceInfoManager;
-				PRODUCT_NAME = CSSDeviceInfoManager;
+				MODULEMAP_FILE = "Target Support Files/CSSKit/CSSKit.modulemap";
+				PRODUCT_MODULE_NAME = CSSKit;
+				PRODUCT_NAME = CSSKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -689,48 +1487,50 @@
 			};
 			name = Release;
 		};
-		DEBFC6417E539B074395CD8880C1EA94 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C91E23FFEF8B57446D5C9FEECB01320 /* Pods-CSSDeviceInfoManager_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CSSDeviceInfoManager_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CSSDeviceInfoManager_Example/Pods-CSSDeviceInfoManager_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		074136D651AC3AF87AAE3D166D2D97EB /* Build configuration list for PBXNativeTarget "Pods-CSSDeviceInfoManager_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58718118D0695C407A342A144CE771FA /* Debug */,
+				9F716F053488595296FF75B1146E20AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13F939EA1804CBF459FB8AADAA7883A2 /* Build configuration list for PBXNativeTarget "CSSDeviceInfoManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C01376222C5A11B3FEB0E70DB903E86 /* Debug */,
+				5369A10368AD65A28742ADC1CDE864CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D11C82AF2204B41B80412B8DC9C1D652 /* Debug */,
 				96434B6C8FF320C976A10DAD7174A4BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C97534BAC178D53A17BE10E2C54A8F5 /* Build configuration list for PBXNativeTarget "CSSNetworkClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB2A8050385EA69F5A4D6EE81C9C564 /* Debug */,
+				50883FAFF64F878A01E8B243B18793CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		401683563D419644C86E30DD899DD9F0 /* Build configuration list for PBXNativeTarget "CSSDeviceInfoTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F816AC4CAF7E0C9804F41103FD52499 /* Debug */,
+				C6378C905B0A4B36FA7FE26436691844 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -744,20 +1544,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A72E9228B184465C3BD96735BC6B4348 /* Build configuration list for PBXNativeTarget "Pods-CSSDeviceInfoManager_Example" */ = {
+		54BE29B77F44418602E466FD621EDD02 /* Build configuration list for PBXNativeTarget "CSSKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				378E29B6928DAA8AEE58679085939B05 /* Debug */,
-				DEBFC6417E539B074395CD8880C1EA94 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A8C70737D5474E1D214028343CB4D05A /* Build configuration list for PBXNativeTarget "CSSDeviceInfoManager" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6DDAB99521D64AD82CAAB13AB5641943 /* Debug */,
-				D127E3C8216FFFAA4929286DEEE1845D /* Release */,
+				B48199DA01A5D7BDA26561588E28BB83 /* Debug */,
+				E672D46B3C67077FEC16A77AA9541B04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

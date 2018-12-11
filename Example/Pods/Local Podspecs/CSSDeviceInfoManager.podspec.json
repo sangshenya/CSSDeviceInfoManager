@@ -18,5 +18,25 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "CSSDeviceInfoManager/Classes/**/*"
+  "source_files": "CSSDeviceInfoManager/Classes/*.{h,m}",
+  "dependencies": {
+    "CSSKit": [
+
+    ],
+    "CSSDeviceInfoTool": [
+
+    ],
+    "CSSNetworkClient": [
+
+    ]
+  },
+  "ios": {
+    "vendored_frameworks": "CSSDeviceInfoManager/Classes/*.framework"
+  },
+  "subspecs": [
+    {
+      "name": "Sender",
+      "source_files": "CSSDeviceInfoManager/Classes/Sender/**/*"
+    }
+  ]
 }

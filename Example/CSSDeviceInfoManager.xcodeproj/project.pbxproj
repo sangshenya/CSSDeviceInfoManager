@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = sangshenya;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = XV36ECQQZA;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -326,12 +329,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CSSDeviceInfoManager_Example/Pods-CSSDeviceInfoManager_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CSSDeviceInfoManager/CSSDeviceInfoManager.framework",
+				"${BUILT_PRODUCTS_DIR}/CSSDeviceInfoTool/CSSDeviceInfoTool.framework",
+				"${BUILT_PRODUCTS_DIR}/CSSKit/CSSKit.framework",
+				"${BUILT_PRODUCTS_DIR}/CSSNetworkClient/CSSNetworkClient.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSSDeviceInfoManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSSDeviceInfoTool.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSSKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSSNetworkClient.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -497,6 +506,7 @@
 			baseConfigurationReference = 156C48189E9ACECEDE32909D /* Pods-CSSDeviceInfoManager_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XV36ECQQZA;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CSSDeviceInfoManager/CSSDeviceInfoManager-Prefix.pch";
 				INFOPLIST_FILE = "CSSDeviceInfoManager/CSSDeviceInfoManager-Info.plist";
@@ -512,6 +522,7 @@
 			baseConfigurationReference = FD741F2388EBF8B53CA408F7 /* Pods-CSSDeviceInfoManager_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XV36ECQQZA;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CSSDeviceInfoManager/CSSDeviceInfoManager-Prefix.pch";
 				INFOPLIST_FILE = "CSSDeviceInfoManager/CSSDeviceInfoManager-Info.plist";

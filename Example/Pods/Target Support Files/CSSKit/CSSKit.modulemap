@@ -1,0 +1,6 @@
+framework module CSSKit {
+  umbrella header "CSSKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -117,4 +117,21 @@
     return [[NSUserDefaults standardUserDefaults] doubleForKey:kCacheMachineId];
 }
 
+//手机磁盘空间
+// 磁盘总内存 单位:B
+- (int64_t)getTotalDiskSpace{
+    return [CSSDeviceInfoTool getTotalDiskSpace];
+}
+
+// 磁盘使用空间 单位:B
+- (int64_t)getUsedDiskSpace{
+    return [CSSDeviceInfoTool getUsedDiskSpace];
+}
+
+// 空闲空间 单位:B
+- (int64_t)getFreeDiskSpace{
+    return [CSSDeviceInfoTool getFreeDiskSpace];
+}
+
+
 @end

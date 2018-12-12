@@ -801,5 +801,34 @@ int KCSSTDeviceCPUSubType(void) {
             result[12], result[13], result[14], result[15]
             ];
 }
+#pragma mark - 磁盘总内存
++ (int64_t)getTotalDiskSpace {
+    NSError *error = nil;
+    NSDictionary *attrs = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:&error];
+    if (error) return -1;
+    int64_t space =  [[attrs objectForKey:NSFileSystemSize] longLongValue];
+    if (space < 0) space = -1;
+    return space;
+}
+
+#pragma mark - 磁盘使用空间
++ (int64_t)getUsedDiskSpace {
+    int64_t totalDisk = [self getTotalDiskSpace];
+    int64_t freeDisk = [self getFreeDiskSpace];
+    if (totalDisk < 0 || freeDisk < 0) return -1;
+    int64_t usedDisk = totalDisk - freeDisk;
+    if (usedDisk < 0) usedDisk = -1;
+    return usedDisk;
+}
+#pragma mark - 磁盘空闲空间
+
++ (int64_t)getFreeDiskSpace {
+    NSError *error = nil;
+    NSDictionary *attrs = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:&error];
+    if (error) return -1;
+    int64_t space =  [[attrs objectForKey:NSFileSystemFreeSize] longLongValue];
+    if (space < 0) space = -1;
+    return space;
+}
 
 @end

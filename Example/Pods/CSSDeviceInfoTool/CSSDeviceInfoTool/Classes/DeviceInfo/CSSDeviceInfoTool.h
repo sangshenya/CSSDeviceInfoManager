@@ -105,6 +105,15 @@ int KCSSTDeviceCPUSubType(void);
 
 + (NSString *)md5WithString:(NSString *)string;
 
+// 磁盘总内存 单位:B
++ (int64_t)getTotalDiskSpace;
+
+// 磁盘使用空间 单位:B
++ (int64_t)getUsedDiskSpace;
+
+// 空闲空间 单位:B
++ (int64_t)getFreeDiskSpace;
+
 @end
 
 NS_ASSUME_NONNULL_END

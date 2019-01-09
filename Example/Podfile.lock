@@ -1,14 +1,14 @@
 PODS:
-  - CSSDeviceInfoManager (0.1.2):
-    - CSSDeviceInfoManager/Sender (= 0.1.2)
+  - CSSDeviceInfoManager (0.1.5):
+    - CSSDeviceInfoManager/Sender (= 0.1.5)
     - CSSDeviceInfoTool
     - CSSKit
     - CSSNetworkClient
-  - CSSDeviceInfoManager/Sender (0.1.2):
+  - CSSDeviceInfoManager/Sender (0.1.5):
     - CSSDeviceInfoTool
     - CSSKit
     - CSSNetworkClient
-  - CSSDeviceInfoTool (0.1.5):
+  - CSSDeviceInfoTool (0.1.7):
     - CSSKit
   - CSSKit (0.1.7):
     - CSSKit/Foundation (= 0.1.7)
@@ -36,8 +36,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CSSDeviceInfoManager: f12ebcb8c0d907b20fe0ab91c79aa645c0581b55
-  CSSDeviceInfoTool: c4da113e1285915774679287b344bac79a701329
+  CSSDeviceInfoManager: f8b4709a0d8a371d84d88ea749812f1d0cbca72d
+  CSSDeviceInfoTool: 11a4a581e31450666dea6e7f65fe51aa5f2b05bd
   CSSKit: 4ddb67228ba28c5e6a2d1bb351dd145025208b3d
   CSSNetworkClient: 6a4ece4c650976d4f98b3c99de9bdf03c4de1264
 

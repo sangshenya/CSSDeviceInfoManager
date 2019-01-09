@@ -1,23 +1,25 @@
 # CSSDeviceInfoManager
 
-[![CI Status](https://img.shields.io/travis/sangshenya/CSSDeviceInfoManager.svg?style=flat)](https://travis-ci.org/sangshenya/CSSDeviceInfoManager)
-[![Version](https://img.shields.io/cocoapods/v/CSSDeviceInfoManager.svg?style=flat)](https://cocoapods.org/pods/CSSDeviceInfoManager)
-[![License](https://img.shields.io/cocoapods/l/CSSDeviceInfoManager.svg?style=flat)](https://cocoapods.org/pods/CSSDeviceInfoManager)
-[![Platform](https://img.shields.io/cocoapods/p/CSSDeviceInfoManager.svg?style=flat)](https://cocoapods.org/pods/CSSDeviceInfoManager)
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
-
-CSSDeviceInfoManager is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+## 导入CSSDeviceInfoManager
 
 ```ruby
 pod 'CSSDeviceInfoManager'
+```
+
+## 引用CSSDeviceInfoManager
+
+`引用CSSDeviceInfoManager`
+```obj-c
+#import <CSSDeviceInfoManager/CSSDeviceInfoManager.h>
+```
+
+## 获取CSSDeviceInfoManager中的信息
+
+`例子：获取iOS的广告标识符idfa`
+```obj-c
+//获取iOS idfa
+NSString *idfa = [CSSDeviceInfoManager sharedInstance].idfa;
+NSLog(@"idfa:%@",idfa);
 ```
 
 ## Author

@@ -368,6 +368,10 @@ NSString * KCSSTAPPVersion(void) {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
 }
 
+NSString * KCSSTAPPBundleName(void) {
+    return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
+}
+
 NSString * KCSSTDateString(NSDate *date, NSString *format) {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:format];

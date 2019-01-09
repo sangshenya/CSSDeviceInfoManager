@@ -45,6 +45,9 @@ NSString * KCSSTAPPBundleID(void);
 /// Get app version
 NSString * KCSSTAPPVersion(void);
 
+/// Get app name
+NSString * KCSSTAPPBundleName(void);
+
 /// Change date to String with formatter
 NSString * KCSSTDateString(NSDate *date, NSString *format);
 

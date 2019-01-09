@@ -51,7 +51,10 @@
         _cpuSubtype = KCSSTDeviceCPUSubType();
         
         NSMutableDictionary *param = [self css_toDic];
-        
+        [param setValue:[NSNumber numberWithFloat:([self getTotalDiskSpace]/1024/1024.0)] forKey:@"AllDiskSpace"];
+        [param setValue:[NSNumber numberWithFloat:([self getUsedDiskSpace]/1024/1024.0)] forKey:@"UserDiskSpace"];
+        [param setValue:[NSNumber numberWithFloat:([self getFreeDiskSpace]/1024/1024.0)] forKey:@"FreeDiskSpace"];
+//        NSLog(@"param: %@",param);
         [CSSTrackerSender provingMachineIdWithParame:param];
     }
     return self;

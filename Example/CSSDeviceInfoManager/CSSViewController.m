@@ -7,6 +7,7 @@
 //
 
 #import "CSSViewController.h"
+#import "CSSDeviceInfoManager.h"
 
 @interface CSSViewController ()
 
@@ -18,6 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    //获取iOS idfa
+    NSString *idfa = [CSSDeviceInfoManager sharedInstance].idfa;
+    NSLog(@"idfa:%@",idfa);
 }
 
 - (void)didReceiveMemoryWarning

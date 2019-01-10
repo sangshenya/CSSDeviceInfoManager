@@ -28,6 +28,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)sharedInstance;
 
+/**
+ @parms authorizationJudge 是否在定位权限关闭的情况下不继续请求定位权限
+ */
+
 - (void)locateByGpsWithAuthorizationJudge:(BOOL)authorizationJudge;
 
 @end

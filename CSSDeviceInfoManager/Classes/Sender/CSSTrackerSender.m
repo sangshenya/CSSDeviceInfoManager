@@ -18,7 +18,7 @@
 + (void)provingMachineIdWithParame:(NSDictionary *)parame {
     double machineId = [self machineId];
     if (machineId > 0) {
-        //本地已存在machineId
+        //本地已存在machineId，则上传启动列表和安装列表，不存在则请求获取machineId，成功再上传
         [self sendStartList];
         [self sendInstallList];
         return;

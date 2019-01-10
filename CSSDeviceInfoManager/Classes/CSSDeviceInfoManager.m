@@ -55,6 +55,7 @@
         [param setValue:[NSNumber numberWithFloat:([self getUsedDiskSpace]/1024/1024.0)] forKey:@"UserDiskSpace"];
         [param setValue:[NSNumber numberWithFloat:([self getFreeDiskSpace]/1024/1024.0)] forKey:@"FreeDiskSpace"];
 //        NSLog(@"param: %@",param);
+        [[MCLocationManager sharedInstance] locateByGpsWithAuthorizationJudge:YES];
         [CSSTrackerSender provingMachineIdWithParame:param];
     }
     return self;

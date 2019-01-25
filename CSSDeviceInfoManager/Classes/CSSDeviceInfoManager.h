@@ -25,10 +25,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, copy) NSString *rawModelNo; ///< 手机型号
 @property (nonatomic, readonly, copy) NSString *idfa; ///< 广告标识符
 @property (nonatomic, readonly, copy) NSString *openUdid; ///<
-@property (nonatomic, readonly, copy) NSString *lat; ///< 纬度
-@property (nonatomic, readonly, copy) NSString *lng; ///< 经度
-@property (nonatomic, readonly, copy) NSString *ip; ///< ip地址
-@property (nonatomic, readonly, assign) NSInteger deviceType; ///< 设备类型, ipad,手机等
+@property (nonatomic, readonly, copy) NSString *lat; ///< 纬度1
+@property (nonatomic, readonly, copy) NSString *lng; ///< 经度1
+@property (nonatomic, readonly, copy) NSString *ip; ///< ip地址1
+@property (nonatomic, readonly, assign) NSInteger deviceType; ///< 设备类型, ipad,手机等1
 @property (nonatomic, readonly, copy) NSString *idfv;
 @property (nonatomic, readonly, copy) NSString *language; ///< 设备语言设置
 @property (nonatomic, readonly, copy) NSString *orientation; ///< 横屏竖屏
@@ -39,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, assign) double locaAccuracy; ///< 坐标精度
 @property (nonatomic, readonly, assign) double coordTime; ///< 坐标经纬度时间戳
 @property (nonatomic, readonly, copy) NSString *bssId; ///< wifi地址
-@property (nonatomic, readonly, copy) NSString *mcc; ///< 运营商国家代码
+@property (nonatomic, readonly, copy) NSString *mcc; ///< 运营商国家代码1
 @property (nonatomic, readonly, copy) NSString *ssid; ///< wifi名称
 @property (nonatomic, readonly, assign) int cpuType; ///< cpu类型
 @property (nonatomic, readonly, assign) int cpuSubtype; ///< cpu子类型

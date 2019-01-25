@@ -56,7 +56,12 @@
         [param setValue:[NSNumber numberWithFloat:([self getFreeDiskSpace]/1024/1024.0)] forKey:@"FreeDiskSpace"];
 //        NSLog(@"param: %@",param);
         [[MCLocationManager sharedInstance] locateByGpsWithAuthorizationJudge:YES];
-        [CSSTrackerSender provingMachineIdWithParame:param];
+        [CSSTrackerSender provingMachineIdWithParame:param serviceDomain:nil];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(applicationDidBecomeActive)
+                                                     name:UIApplicationDidBecomeActiveNotification
+                                                   object:nil];
     }
     return self;
 }
@@ -135,6 +140,11 @@
 // 空闲空间 单位:B
 - (int64_t)getFreeDiskSpace{
     return [CSSDeviceInfoTool getFreeDiskSpace];
+}
+
+#pragma mark - 程序进入前台并处于活动状态时
+- (void)applicationDidBecomeActive{
+    [CSSTrackerSender sendStartListWithStartServiceDomain:nil];
 }
 
 

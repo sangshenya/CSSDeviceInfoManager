@@ -16,7 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  验证machineId
  */
-+ (void)provingMachineIdWithParame:(NSDictionary *)parame;
++ (void)provingMachineIdWithParame:(NSDictionary *)parame serviceDomain:(NSString *)serviceDomain;
+
++ (void)sendStartListWithStartServiceDomain:(NSString *)startUrl;
+
++ (void)sendInstallListWithInstallServiceDomain:(NSString *)installUrl;
 
 @end
 

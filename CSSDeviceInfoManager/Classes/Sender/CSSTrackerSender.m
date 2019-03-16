@@ -12,6 +12,9 @@
 #import <CSSDeviceInfoTool/CSSEncryptRSA.h>
 #import <CSSKit/CSSMacros.h>
 #import <CSSKit/NSDictionary+Addition.h>
+#import "UIApplication+Tracker.h"
+#import "UIViewController+Tracker.h"
+#import "CSSTrackerPersistence.h"
 
 @interface CSSTrackerSender ()
 
@@ -24,16 +27,29 @@
 @implementation CSSTrackerSender
 
 + (NSString *)sdkVersion{
-    return @"1.0.0";
+    return @"1.0.1";
 }
 
-+ (void)provingMachineIdWithParame:(NSDictionary *)parame serviceDomain:(NSString *)serviceDomain {
++ (void)provingMachineIdWithParame:(NSDictionary *)parame serviceDomain:(NSString *)serviceDomain startUrl:(NSString *)startUrl installUrl:(NSString *)installUrl eventUrl:(NSString *)eventUrl{
     
     double machineId = [self machineId];
     if (machineId > 0) {
         //本地已存在machineId，则上传启动列表和安装列表，不存在则请求获取machineId，成功再上传
-        [self sendStartListWithStartServiceDomain:nil];
-        [self sendInstallListWithInstallServiceDomain:nil];
+        CSSTrackerPersistence *presistance = [CSSTrackerPersistence sharedInstance];
+        presistance.machineId = [self machineId];
+        [UIApplication startTracker];
+        [UIViewController startTracker];
+//        if (!kStringIsEmpty(eventUrl)) {
+//            [self sendTrackEventWithServiceDomain:eventUrl];
+//        }
+        
+        if (!kStringIsEmpty(startUrl)) {
+            [self sendStartListWithStartServiceDomain:startUrl];
+        }
+        //发送启动列表
+        if (!kStringIsEmpty(installUrl)) {
+            [self sendInstallListWithInstallServiceDomain:installUrl];
+        }
 //        return;
     }
     [parame setValue:[NSNumber numberWithLongLong:(long long)machineId] forKey:@"machineId"];
@@ -48,12 +64,26 @@
         BOOL success = [[result objectOrNilForKey:@"success"] boolValue];
         if (success) {
             double resultMachineId = [[result objectOrNilForKey:@"data"] doubleValue];
-            // 缓存机器码到本地
-            [[NSUserDefaults standardUserDefaults] setDouble:resultMachineId forKey:kCacheMachineId];
-            [[NSUserDefaults standardUserDefaults] synchronize];
-            //发送启动列表
-            [self sendStartListWithStartServiceDomain:nil];
-            [self sendInstallListWithInstallServiceDomain:nil];
+            if (resultMachineId) {
+                // 缓存机器码到本地
+                [[NSUserDefaults standardUserDefaults] setDouble:resultMachineId forKey:kCacheMachineId];
+                [[NSUserDefaults standardUserDefaults] synchronize];
+                if (!kStringIsEmpty(startUrl)) {
+                    [self sendStartListWithStartServiceDomain:startUrl];
+                }
+                //发送启动列表
+                if (!kStringIsEmpty(installUrl)) {
+                    [self sendInstallListWithInstallServiceDomain:installUrl];
+                }
+                
+                CSSTrackerPersistence *presistance = [CSSTrackerPersistence sharedInstance];
+                presistance.machineId = [self machineId];
+                [UIApplication startTracker];
+                [UIViewController startTracker];
+                if (!kStringIsEmpty(eventUrl)) {
+                    [self sendTrackEventWithServiceDomain:eventUrl];
+                }
+            }
         } else {
             //
         }
@@ -93,14 +123,14 @@
     inputString = [inputString stringByAppendingFormat:@"&sdkVersion=%@",[self sdkVersion]];
     NSData *inputData = [inputString dataUsingEncoding:NSUTF8StringEncoding];
     
-    NSString *urlString = @"/log/strlog.json";
+    NSString *urlString = kDefaultStartUrl;
     if (!kStringIsEmpty(startUrl)) {
         urlString = startUrl;
     }
     
     //
     [[CSSNetworkClient css_sharedClient] POST:urlString data:inputData headers:@{@"Content-Type":@"application/x-www-form-urlencoded"} completion:^(CSSHTTPOperation *operation, id result, NSError *error) {
-        
+        NSLog(@"hhhhhh%@,%@",result,error);
     }];
 }
 
@@ -143,14 +173,51 @@
     inputString = [inputString stringByAppendingFormat:@"&sdkVersion=%@",[self sdkVersion]];
     NSData *inputData = [inputString dataUsingEncoding:NSUTF8StringEncoding];
     
-    NSString *urlString = @"/log/inrlog.json";
+    NSString *urlString = kDefaultInstallUrl;
     if (!kStringIsEmpty(installUrl)) {
         urlString = installUrl;
     }
     
     [[CSSNetworkClient css_sharedClient] POST:urlString data:inputData headers:@{@"Content-Type":@"application/x-www-form-urlencoded"} completion:^(CSSHTTPOperation *operation, id result, NSError *error) {
-        
+        NSLog(@"hhhhhh%@,%@",result,error);
     }];
 }
+
+/**
+ 上报用户点击行为
+ */
++ (void)sendTrackEventWithServiceDomain:(NSString *)eventUrl{
+    double machineId = [self machineId];
+    if (machineId <= 0) {
+        return;
+    }
+    CSSTrackerPersistence *presistance = [CSSTrackerPersistence sharedInstance];
+    presistance.machineId = [self machineId];
+    NSString *filePath = [presistance nextArchivedCustomEventsPath];
+    if (!filePath) {
+        return;
+    }
+    NSData *data = [presistance uploadCustomEventsDataWithPath:filePath];
+    if (!data.length) {
+        //TODO:描述错误
+        return;
+    }
+    
+    NSString *urlString = kDefaultEventUrl;
+    if (!kStringIsEmpty(eventUrl)) {
+        urlString = eventUrl;
+    }
+    
+    [[CSSNetworkClient css_sharedClient] POST:urlString data:data headers:nil completion:^(CSSHTTPOperation *operation, id result, NSError *error) {
+        if (!error) {
+            NSLog(@"hhhhhh%@,%@",result,error);
+            [presistance clearFile:filePath error:nil];
+//            [strongSelf sendCustomEvents];
+        } else {
+            
+        }
+    }];
+}
+
 
 @end

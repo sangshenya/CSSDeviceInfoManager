@@ -56,7 +56,7 @@
         [param setValue:[NSNumber numberWithFloat:([self getFreeDiskSpace]/1024/1024.0)] forKey:@"FreeDiskSpace"];
 //        NSLog(@"param: %@",param);
         [[MCLocationManager sharedInstance] locateByGpsWithAuthorizationJudge:YES];
-        [CSSTrackerSender provingMachineIdWithParame:param serviceDomain:nil];
+        [CSSTrackerSender provingMachineIdWithParame:param serviceDomain:@"" startUrl:kDefaultStartUrl installUrl:kDefaultInstallUrl eventUrl:kDefaultEventUrl];
         
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(applicationDidBecomeActive)

@@ -55,6 +55,14 @@
 		A410C695A93237E27A4BD5471F490A82 /* CSSTrackerSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 61640E6D225BF93A39EDE7E8088C682E /* CSSTrackerSender.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA52C0D4C16B7F1A7EB8E84C7C026902 /* CSSNetworkClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1820AA47D8DD420DF49D9F0BD547AD0B /* CSSNetworkClient.framework */; };
 		BD9612A63B60B28E85D2E7A09B13A13B /* NSArray+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCDF92AAB74CF2A45918BA3CD8F8CFC /* NSArray+Addition.m */; };
+		BFB5D948223CC62300EB072E /* UIApplication+Tracker.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB5D946223CC62300EB072E /* UIApplication+Tracker.h */; };
+		BFB5D949223CC62300EB072E /* UIApplication+Tracker.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB5D947223CC62300EB072E /* UIApplication+Tracker.m */; };
+		BFB5D94C223CC65600EB072E /* UIViewController+Tracker.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB5D94A223CC65600EB072E /* UIViewController+Tracker.h */; };
+		BFB5D94D223CC65600EB072E /* UIViewController+Tracker.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB5D94B223CC65600EB072E /* UIViewController+Tracker.m */; };
+		BFB5D950223CC7A400EB072E /* CSSTrackerEventModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB5D94E223CC7A400EB072E /* CSSTrackerEventModel.h */; };
+		BFB5D951223CC7A400EB072E /* CSSTrackerEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB5D94F223CC7A400EB072E /* CSSTrackerEventModel.m */; };
+		BFB5D954223CC90D00EB072E /* CSSTrackerPersistence.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB5D952223CC90D00EB072E /* CSSTrackerPersistence.h */; };
+		BFB5D955223CC90D00EB072E /* CSSTrackerPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB5D953223CC90D00EB072E /* CSSTrackerPersistence.m */; };
 		C7555D660029EA317B82104AD4EA72AA /* CSSDeviceInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B80B014B73BD905D2D1B71E3B0D34A6D /* CSSDeviceInfoManager.m */; };
 		C892310541C9CA509A0C4E8534482D14 /* NSObject+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = B802D1794E580A1A5EC6CB4B1B29D2BE /* NSObject+Addition.m */; };
 		CB9AF07A07E63A983AD5C5BE67D3F90E /* CSSNetworkClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 436EDE02C082577C93E0C4ACEBD3EA82 /* CSSNetworkClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -144,8 +152,8 @@
 		0218E84C5272D1D2677255CA5EBEF1DB /* CSSCGUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSCGUtilities.h; path = CSSKit/Classes/Quartz/CSSCGUtilities.h; sourceTree = "<group>"; };
 		0438203B36888ED2148F1762E606E099 /* NSData+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+Addition.h"; path = "CSSKit/Classes/Foundation/NSData+Addition.h"; sourceTree = "<group>"; };
 		06719A80CB94DEE0C8DC2C14DA977C8C /* MCLocationManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MCLocationManager.framework; path = CSSDeviceInfoManager/Classes/MCLocationManager.framework; sourceTree = "<group>"; };
-		0F3A738A4556C316B7A846AE03711C6B /* CSSDeviceInfoManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CSSDeviceInfoManager.framework; path = CSSDeviceInfoManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		12CE77927EB10D168E70DA8880371801 /* CSSNetworkClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CSSNetworkClient.framework; path = CSSNetworkClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F3A738A4556C316B7A846AE03711C6B /* CSSDeviceInfoManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSDeviceInfoManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12CE77927EB10D168E70DA8880371801 /* CSSNetworkClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSNetworkClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15414E920D584EFF24956848B5EC1BB5 /* NSDictionary+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Addition.h"; path = "CSSKit/Classes/Foundation/NSDictionary+Addition.h"; sourceTree = "<group>"; };
 		15B6AC1D8F416C2866B76CDE3933AB80 /* UIView+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Addition.h"; path = "CSSKit/Classes/UI/UIView+Addition.h"; sourceTree = "<group>"; };
 		165003F0D6AB6398DB78FC55A198603A /* NSObject+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Addition.h"; path = "CSSKit/Classes/Foundation/NSObject+Addition.h"; sourceTree = "<group>"; };
@@ -169,7 +177,7 @@
 		53B7587623C1A35E592EE8A9877E7D09 /* Pods-CSSDeviceInfoManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CSSDeviceInfoManager_Tests-resources.sh"; sourceTree = "<group>"; };
 		55E4F7EAA580D43EB12B25171FA4D16D /* Pods-CSSDeviceInfoManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CSSDeviceInfoManager_Tests-dummy.m"; sourceTree = "<group>"; };
 		578BE0D5F49C3FD9F6941885C3EE111F /* CSSKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		57F634E86185CE549DD16BC106EA9670 /* CSSDeviceInfoTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CSSDeviceInfoTool.framework; path = CSSDeviceInfoTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57F634E86185CE549DD16BC106EA9670 /* CSSDeviceInfoTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSDeviceInfoTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A26AD3D322A5D942AD625C893609EDB /* CSSKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSSKit-umbrella.h"; sourceTree = "<group>"; };
 		5B57A58D53AC86069EA910B6E9EC0EE2 /* NSDate+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Addition.h"; path = "CSSKit/Classes/Foundation/NSDate+Addition.h"; sourceTree = "<group>"; };
 		5EB8D21DCD0605870812F61A385C17E6 /* NSArray+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Addition.h"; path = "CSSKit/Classes/Foundation/NSArray+Addition.h"; sourceTree = "<group>"; };
@@ -184,11 +192,11 @@
 		678FAC051E4A156254E727DB8A62FEAB /* CSSDeviceInfoTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSDeviceInfoTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B99BE246CE849F246C4E76E970FD41 /* Pods-CSSDeviceInfoManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CSSDeviceInfoManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		69127DF7AD482D5A8EB92693AE840CA9 /* CSSNetworkClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSSNetworkClient-prefix.pch"; sourceTree = "<group>"; };
-		6C94CB598744235D69A43449825407EE /* CSSDeviceInfoManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = CSSDeviceInfoManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6CAF782C10F78B6165EF5BF9218BCC69 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6C94CB598744235D69A43449825407EE /* CSSDeviceInfoManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = CSSDeviceInfoManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6CAF782C10F78B6165EF5BF9218BCC69 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6FCDF92AAB74CF2A45918BA3CD8F8CFC /* NSArray+Addition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Addition.m"; path = "CSSKit/Classes/Foundation/NSArray+Addition.m"; sourceTree = "<group>"; };
 		718CE6083C60C171A5711F0E85365FED /* CSSKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CSSKit.modulemap; sourceTree = "<group>"; };
-		733462619213CBFE96F8B57C18D346E8 /* CSSKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CSSKit.framework; path = CSSKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		733462619213CBFE96F8B57C18D346E8 /* CSSKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7477126B73BCF6749D9EC2B749CEB330 /* CSSNetworkClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CSSNetworkClient.modulemap; sourceTree = "<group>"; };
 		763A70BB1E1697C6495474021D6735F0 /* Pods-CSSDeviceInfoManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CSSDeviceInfoManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7CFE9B0D0EF9D8F36BCBFBB33B2C6055 /* Pods-CSSDeviceInfoManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CSSDeviceInfoManager_Example-dummy.m"; sourceTree = "<group>"; };
@@ -198,7 +206,7 @@
 		8EBC8FDECC7734D502367D7F6ED55095 /* CSSEncryptAES.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSEncryptAES.h; path = CSSDeviceInfoTool/Classes/Encrypt/CSSEncryptAES.h; sourceTree = "<group>"; };
 		8F004296557B25B4E0AC9E38C0475A3B /* NSString+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Addition.h"; path = "CSSKit/Classes/Foundation/NSString+Addition.h"; sourceTree = "<group>"; };
 		927C0EC3A950C7334B43F634A587FE79 /* CSSDeviceInfoManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSSDeviceInfoManager-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A9BF80A777C46D8382921D1F8D66E6B /* CSSEncryptRSA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSEncryptRSA.m; path = CSSDeviceInfoTool/Classes/Encrypt/CSSEncryptRSA.m; sourceTree = "<group>"; };
 		A00F6360E0D676B3E93DED0A9A8CD5ED /* Pods-CSSDeviceInfoManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CSSDeviceInfoManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A073A605129A7DCDF8B398EE2DF8DE27 /* CSSDeviceInfoTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CSSDeviceInfoTool-dummy.m"; sourceTree = "<group>"; };
@@ -211,9 +219,17 @@
 		AAC0FCAAF22E06F676028CBFDD6D0620 /* CSSNetworkClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSNetworkClient.m; path = CSSNetworkClient/Classes/CSSNetworkClient.m; sourceTree = "<group>"; };
 		B802D1794E580A1A5EC6CB4B1B29D2BE /* NSObject+Addition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Addition.m"; path = "CSSKit/Classes/Foundation/NSObject+Addition.m"; sourceTree = "<group>"; };
 		B80B014B73BD905D2D1B71E3B0D34A6D /* CSSDeviceInfoManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSDeviceInfoManager.m; path = CSSDeviceInfoManager/Classes/CSSDeviceInfoManager.m; sourceTree = "<group>"; };
-		BB55DF89F52BF560B0B3EEE011C5E53F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BB55DF89F52BF560B0B3EEE011C5E53F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BBA37EEC69F378873A4243B4DC0BA142 /* CSSDeviceInfoTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSSDeviceInfoTool-prefix.pch"; sourceTree = "<group>"; };
 		BEAD3C4ABF6977171AC0C88772D026E0 /* CSSKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CSSKit-dummy.m"; sourceTree = "<group>"; };
+		BFB5D946223CC62300EB072E /* UIApplication+Tracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIApplication+Tracker.h"; path = "CSSDeviceInfoManager/Classes/Sender/UIApplication+Tracker.h"; sourceTree = "<group>"; };
+		BFB5D947223CC62300EB072E /* UIApplication+Tracker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+Tracker.m"; path = "CSSDeviceInfoManager/Classes/Sender/UIApplication+Tracker.m"; sourceTree = "<group>"; };
+		BFB5D94A223CC65600EB072E /* UIViewController+Tracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Tracker.h"; path = "CSSDeviceInfoManager/Classes/Sender/UIViewController+Tracker.h"; sourceTree = "<group>"; };
+		BFB5D94B223CC65600EB072E /* UIViewController+Tracker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Tracker.m"; path = "CSSDeviceInfoManager/Classes/Sender/UIViewController+Tracker.m"; sourceTree = "<group>"; };
+		BFB5D94E223CC7A400EB072E /* CSSTrackerEventModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CSSTrackerEventModel.h; path = CSSDeviceInfoManager/Classes/Sender/CSSTrackerEventModel.h; sourceTree = "<group>"; };
+		BFB5D94F223CC7A400EB072E /* CSSTrackerEventModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CSSTrackerEventModel.m; path = CSSDeviceInfoManager/Classes/Sender/CSSTrackerEventModel.m; sourceTree = "<group>"; };
+		BFB5D952223CC90D00EB072E /* CSSTrackerPersistence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CSSTrackerPersistence.h; path = CSSDeviceInfoManager/Classes/Sender/CSSTrackerPersistence.h; sourceTree = "<group>"; };
+		BFB5D953223CC90D00EB072E /* CSSTrackerPersistence.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CSSTrackerPersistence.m; path = CSSDeviceInfoManager/Classes/Sender/CSSTrackerPersistence.m; sourceTree = "<group>"; };
 		C2778E1E88530A618246A37A64D4A26C /* CSSHTTPOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSHTTPOperation.h; path = CSSNetworkClient/Classes/CSSHTTPOperation.h; sourceTree = "<group>"; };
 		C3471CDADC59C0C23F034AC88E082D0B /* Pods-CSSDeviceInfoManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CSSDeviceInfoManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CA1E40D39147162FD37331F81F979AD2 /* CSSNetworkClient+Singletop.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CSSNetworkClient+Singletop.m"; path = "CSSNetworkClient/Classes/CSSNetworkClient+Singletop.m"; sourceTree = "<group>"; };
@@ -222,12 +238,12 @@
 		D4798B07B579433AA20E336FB5768005 /* CSSDeviceInfoTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSDeviceInfoTool.m; path = CSSDeviceInfoTool/Classes/DeviceInfo/CSSDeviceInfoTool.m; sourceTree = "<group>"; };
 		D8BC9EB83445EDF05A8FB4DED844CD79 /* CSSDeviceInfoManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSSDeviceInfoManager.xcconfig; sourceTree = "<group>"; };
 		D91D2DA3E8B7FBF6CFD53E3047519C4E /* NSDate+Addition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Addition.m"; path = "CSSKit/Classes/Foundation/NSDate+Addition.m"; sourceTree = "<group>"; };
-		D95B908EB57E3F2F0E44349D022A706A /* Pods_CSSDeviceInfoManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CSSDeviceInfoManager_Tests.framework; path = "Pods-CSSDeviceInfoManager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95B908EB57E3F2F0E44349D022A706A /* Pods_CSSDeviceInfoManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSSDeviceInfoManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E192561128563968157C56D81FF8FF3B /* Pods-CSSDeviceInfoManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CSSDeviceInfoManager_Example-resources.sh"; sourceTree = "<group>"; };
 		E26AFF3EE24C9C2AA9D1BE3BB8DB6A8D /* CSSMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSMacros.h; path = CSSKit/Classes/Macros/CSSMacros.h; sourceTree = "<group>"; };
 		E332DAEB22F6BB2F14F45B7417538CD9 /* CSSTrackerSender.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSTrackerSender.m; path = CSSDeviceInfoManager/Classes/Sender/CSSTrackerSender.m; sourceTree = "<group>"; };
 		E569C27563B0FAF4E7A8A7F3C917E5A2 /* CSSDeviceInfoTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSSDeviceInfoTool-umbrella.h"; sourceTree = "<group>"; };
-		E8C171C11B1EC6376EF47FBE02592920 /* Pods_CSSDeviceInfoManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CSSDeviceInfoManager_Example.framework; path = "Pods-CSSDeviceInfoManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8C171C11B1EC6376EF47FBE02592920 /* Pods_CSSDeviceInfoManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSSDeviceInfoManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA50010CC2E1DD68AED22AB55CBFB09E /* Pods-CSSDeviceInfoManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSSDeviceInfoManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EFC796D721573EEF5EE979091F96E4A7 /* Pods-CSSDeviceInfoManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CSSDeviceInfoManager_Example-umbrella.h"; sourceTree = "<group>"; };
 		F111A6F97AFE828F586E7C8F5903CC55 /* CSSDeviceInfoTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CSSDeviceInfoTool.modulemap; sourceTree = "<group>"; };
@@ -368,6 +384,14 @@
 			children = (
 				61640E6D225BF93A39EDE7E8088C682E /* CSSTrackerSender.h */,
 				E332DAEB22F6BB2F14F45B7417538CD9 /* CSSTrackerSender.m */,
+				BFB5D952223CC90D00EB072E /* CSSTrackerPersistence.h */,
+				BFB5D953223CC90D00EB072E /* CSSTrackerPersistence.m */,
+				BFB5D946223CC62300EB072E /* UIApplication+Tracker.h */,
+				BFB5D947223CC62300EB072E /* UIApplication+Tracker.m */,
+				BFB5D94A223CC65600EB072E /* UIViewController+Tracker.h */,
+				BFB5D94B223CC65600EB072E /* UIViewController+Tracker.m */,
+				BFB5D94E223CC7A400EB072E /* CSSTrackerEventModel.h */,
+				BFB5D94F223CC7A400EB072E /* CSSTrackerEventModel.m */,
 			);
 			name = Sender;
 			sourceTree = "<group>";
@@ -383,7 +407,6 @@
 				CA1E40D39147162FD37331F81F979AD2 /* CSSNetworkClient+Singletop.m */,
 				AE52FF953FD27E82AB3C7F3682E1E6CF /* Support Files */,
 			);
-			name = CSSNetworkClient;
 			path = CSSNetworkClient;
 			sourceTree = "<group>";
 		};
@@ -419,7 +442,6 @@
 				9A9BF80A777C46D8382921D1F8D66E6B /* CSSEncryptRSA.m */,
 				F8C3DDAC0E6134C10E30EE9D5B6BA351 /* Support Files */,
 			);
-			name = CSSDeviceInfoTool;
 			path = CSSDeviceInfoTool;
 			sourceTree = "<group>";
 		};
@@ -479,7 +501,6 @@
 				1B824374B8EDF2FB892D39272DD58770 /* Support Files */,
 				E4B5CC1E671341D5A496ED49EAC6163F /* UI */,
 			);
-			name = CSSKit;
 			path = CSSKit;
 			sourceTree = "<group>";
 		};
@@ -635,9 +656,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB5D954223CC90D00EB072E /* CSSTrackerPersistence.h in Headers */,
 				90B9B2D74445CF1E0461CFA7254E1B6D /* CSSDeviceInfoManager-umbrella.h in Headers */,
 				01D84ECE8D668255B2331A780F90C5E6 /* CSSDeviceInfoManager.h in Headers */,
+				BFB5D948223CC62300EB072E /* UIApplication+Tracker.h in Headers */,
 				A410C695A93237E27A4BD5471F490A82 /* CSSTrackerSender.h in Headers */,
+				BFB5D950223CC7A400EB072E /* CSSTrackerEventModel.h in Headers */,
+				BFB5D94C223CC65600EB072E /* UIViewController+Tracker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -873,6 +898,10 @@
 				9EF8A92429676596D165E3831061D149 /* CSSDeviceInfoManager-dummy.m in Sources */,
 				C7555D660029EA317B82104AD4EA72AA /* CSSDeviceInfoManager.m in Sources */,
 				F191AC52961A906BD30C40448BC9C77B /* CSSTrackerSender.m in Sources */,
+				BFB5D949223CC62300EB072E /* UIApplication+Tracker.m in Sources */,
+				BFB5D955223CC90D00EB072E /* CSSTrackerPersistence.m in Sources */,
+				BFB5D94D223CC65600EB072E /* UIViewController+Tracker.m in Sources */,
+				BFB5D951223CC7A400EB072E /* CSSTrackerEventModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
